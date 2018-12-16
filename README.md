@@ -1,6 +1,6 @@
 # OpenCog packaging-related files for Debian / Ubuntu
 
-This repository contains files for packaging the [OpenCog](https://github.com/opencog) AI/AGI testbed for Debian / Ubuntu based GNU/Linux distributions.  For general information on OpenCog, visit or 
+This repository contains files for packaging the [OpenCog](https://github.com/opencog) AI/AGI testbed for Debian / Ubuntu based GNU/Linux distributions.  For general information on OpenCog, visit [the official website](https://opencog.org/)(not much info) or [Wiki](https://wiki.opencog.org/w/The_Open_Cognition_Project)(a bit better, but mostly outdated).
 
 ## Pre-built OpenCog packages for Debian sid
 
@@ -34,13 +34,12 @@ Also, you can access the APT repository directly: https://people.debian.org/~mha
 
 ## Building OpenCog by yourself
 
-1. Cloning each OpenCog GitHub repos.
+1. Clone each OpenCog GitHub repos.
 
-2. Copy `debian/` and `update-$REPO_NAME.sh` into that directory
+2. Copy `debian/` and `update-$REPO_NAME.sh` into that directory.
 
-3. Run `update-$REPO_NAME.sh` (this will give you the orig source tarball and copy `debian/` into the source dir)
+3. Run `update-$REPO_NAME.sh`.  This will create the orig source tarball and copy `debian/` into the source dir.
 
-4. Install needed packages for build by `apt-get build-dep $REPO_NAME`.  Change `debian/changelog`.
+4. Install needed packages for the build by `sudo apt-get build-dep packagename`.  Edit `debian/changelog`.
 
 5. In the source dir, run `$ dpkg-buildpackage -rfakeroot`
-
