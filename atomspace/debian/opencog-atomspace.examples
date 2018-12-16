@@ -1,0 +1,13 @@
+examples/atomspace
+examples/c++-api
+examples/c++-guile
+examples/haskell
+examples/pattern-matcher
+examples/persist
+examples/python
+examples/rule-engine
+examples/README
+debian/dot.guile
+
+
+

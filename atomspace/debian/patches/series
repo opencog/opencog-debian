@@ -1,0 +1,12 @@
+fix-pathes-opencog.scm.patch
+pythoneval_fix.patch
+kill-pythonevalutest.patch
+kill-multiatomspaceutest.patch
+kill-vectorapiutest.patch
+kill_nestedpututest.patch
+kill_scmopenogtestrunnerpass.patch
+kill_pythonutilitiesutest.patch
+kill_ureconfigutest.patch
+kill_backwardchainerutest.patch
+kill_ruleutest.patch
+kill_cythonbackwardchainer.patch

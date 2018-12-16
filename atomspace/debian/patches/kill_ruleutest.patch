@@ -1,0 +1,11 @@
+--- a/tests/rule-engine/CMakeLists.txt
++++ b/tests/rule-engine/CMakeLists.txt
+@@ -9,7 +9,7 @@
+ #ADD_CXXTEST(UREConfigUTest)
+ ADD_CXXTEST(BetaDistributionUTest)
+ ADD_CXXTEST(ActionSelectionUTest)
+-ADD_CXXTEST(RuleUTest)
++#ADD_CXXTEST(RuleUTest)
+ 
+ ADD_SUBDIRECTORY (forwardchainer)
+ ADD_SUBDIRECTORY (backwardchainer)

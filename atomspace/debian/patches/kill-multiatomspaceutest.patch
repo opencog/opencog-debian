@@ -1,0 +1,11 @@
+--- a/tests/scm/CMakeLists.txt
++++ b/tests/scm/CMakeLists.txt
+@@ -20,7 +20,7 @@
+ 
+ ADD_CXXTEST(BasicSCMUTest)
+ ADD_CXXTEST(SCMPrimitiveUTest)
+-ADD_CXXTEST(MultiAtomSpaceUTest)
++#ADD_CXXTEST(MultiAtomSpaceUTest)
+ ADD_CXXTEST(MultiThreadUTest)
+ ADD_CXXTEST(SCMUtilsUTest)
+ ADD_CXXTEST(SCMExecutionOutputUTest)

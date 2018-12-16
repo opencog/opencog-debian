@@ -1,0 +1,16 @@
+--- a/opencog/nlp/chatbot/run-chatbot.scm
++++ b/opencog/nlp/chatbot/run-chatbot.scm
+@@ -1,5 +1,5 @@
+-#! /usr/local/bin/guile \
+-  -L /usr/local/share/opencog/scm --
++#! /usr/bin/guile \
++  -L /usr/share/opencog/scm --
+ !#
+ ; For users who are not aware of readline ...
+ (use-modules (ice-9 readline))
+@@ -17,4 +17,4 @@
+ ; See https://github.com/opencog/opencog/issues/2021
+ (load-r2l-rulebase)
+ 
+-(start-cogserver "../lib/opencog-chatbot.conf")
++(start-cogserver "./opencog-chatbot.conf")

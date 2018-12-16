@@ -1,0 +1,11 @@
+--- a/link-grammar-server.sh
++++ b/link-grammar-server.sh
+@@ -32,7 +32,7 @@
+ 
+ export LANG=en_US.UTF-8
+ 
+-VM_OPTS="-Xmx1024m -Djava.library.path=/usr/lib:/usr/lib/jni:/usr/local/lib:/usr/local/lib/jni"
++VM_OPTS="-Xmx1024m"
+ CLASSPATH="-classpath bin:/usr/share/java/linkgrammar.jar:/usr/local/share/java/linkgrammar.jar"
+ 
+ java $VM_OPTS $CLASSPATH org.linkgrammar.LGService 9000

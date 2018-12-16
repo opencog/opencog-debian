@@ -1,0 +1,35 @@
+--- a/tests/cython/CMakeLists.txt
++++ b/tests/cython/CMakeLists.txt
+@@ -26,20 +26,20 @@
+ # on the server being around for the Scheme code but it does not message
+ # through a "py-eval" server request.
+ #
+-ADD_CXXTEST(PythonEvalUTest)
++#ADD_CXXTEST(PythonEvalUTest)
+ 
+-TARGET_LINK_LIBRARIES(PythonEvalUTest
+-	atomspace
+-	clearbox
+-	PythonEval
+-	atomspace_cython
+-	${COGUTIL_LIBRARY}
+-)
++#TARGET_LINK_LIBRARIES(PythonEvalUTest
++#	atomspace
++#	clearbox
++#	PythonEval
++#	atomspace_cython
++#	${COGUTIL_LIBRARY}
++#)
+ 
+-SET_TESTS_PROPERTIES(PythonEvalUTest
+-	PROPERTIES
+-	ENVIRONMENT "PYTHONDONTWRITEBYTECODE=1"
+-	ENVIRONMENT "PYTHONPATH=${PROJECT_BINARY_DIR}/opencog/cython")
++#SET_TESTS_PROPERTIES(PythonEvalUTest
++#	PROPERTIES
++#	ENVIRONMENT "PYTHONDONTWRITEBYTECODE=1"
++#	ENVIRONMENT "PYTHONPATH=${PROJECT_BINARY_DIR}/opencog/cython")
+ 
+ 
+ # The PythonUtilitiesUTest tests C++ utility functions used from Cython bindings

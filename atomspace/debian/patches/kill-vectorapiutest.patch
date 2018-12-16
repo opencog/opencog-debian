@@ -1,0 +1,8 @@
+--- a/tests/matrix/CMakeLists.txt
++++ b/tests/matrix/CMakeLists.txt
+@@ -18,4 +18,4 @@
+ 	${GUILE_LIBRARIES}
+ )
+ 
+-ADD_CXXTEST(VectorAPIUTest)
++#ADD_CXXTEST(VectorAPIUTest)

@@ -1,0 +1,23 @@
+Source: opencog-atomspace
+Section: devel
+Priority: optional
+Maintainer: Masayuki Hatta <mhatta@debian.org>
+Build-Depends: debhelper (>= 10), cmake, cxxtest, ghc, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, unixodbc-dev, libzmq3-dev, libprotobuf-dev, libpq-dev, postgresql, postgresql-client, guile-2.2-dev, patchelf, libcogutil-dev, cython, python-dev, python3-dev, valgrind, haskell-stack, libgearman-dev, python-nose2, python3-nose, odbc-postgresql, doxygen, graphviz, protobuf-compiler
+Standards-Version: 4.2.1
+Homepage: http://opencog.org
+Vcs-Git: https://github.com/opencog/atomspace.git
+Vcs-Browser: https://github.com/opencog/atomspace.git
+
+Package: opencog-atomspace
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcogutil-dev, python3
+Description: OpenCog hypergraph database, query system and rule engine
+ The OpenCog AtomSpace is a knowledge representation (KR) database and
+ the associated query/reasoning engine to fetch and manipulate that data,
+ and perform reasoning on it. Data is represented in the form of graphs, and
+ more generally, as hypergraphs; thus the AtomSpace is a kind of graph
+ database, the query engine is a general graph re-writing system, and
+ the rule-engine is a generalized rule-driven inferencing system.
+ The vertices and edges of a graph, known as "Atoms", are used to represent
+ not only "data", but also "procedures"; thus, many graphs are executable
+ programs as well as data structures.

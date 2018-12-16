@@ -1,0 +1,11 @@
+--- a/tests/rule-engine/backwardchainer/CMakeLists.txt
++++ b/tests/rule-engine/backwardchainer/CMakeLists.txt
+@@ -4,7 +4,7 @@
+ 	clearbox
+ )
+ 
+-ADD_CXXTEST(BackwardChainerUTest)
++#ADD_CXXTEST(BackwardChainerUTest)
+ ADD_CXXTEST(ControlPolicyUTest)
+ ADD_CXXTEST(BITUTest)
+ ADD_CXXTEST(GradientUTest)

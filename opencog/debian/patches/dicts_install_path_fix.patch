@@ -1,0 +1,8 @@
+--- a/opencog/nlp/sentiment/CMakeLists.txt
++++ b/opencog/nlp/sentiment/CMakeLists.txt
+@@ -14,4 +14,4 @@
+ 	dicts/dec.yml
+ 	dicts/inv.yml
+ 	dicts/sentiWordNet.txt
+-	DESTINATION "${CMAKE_INSTALL_PREFIX}/etc/opencog/dicts")
++	DESTINATION "/etc/opencog/dicts")

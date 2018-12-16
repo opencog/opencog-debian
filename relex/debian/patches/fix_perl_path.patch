@@ -1,0 +1,16 @@
+--- a/src/perl/cff-to-opencog.pl
++++ b/src/perl/cff-to-opencog.pl
+@@ -1,4 +1,4 @@
+-#! /usr/bin/env perl
++#! /usr/bin/perl
+ #
+ # cff-to-opencog.pl
+ #
+--- a/src/perl/cpu-control.pl
++++ b/src/perl/cpu-control.pl
+@@ -1,4 +1,4 @@
+-#! /usr/bin/env perl
++#! /usr/bin/perl
+ #
+ # Job scheduling control.
+ #

@@ -1,0 +1,54 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+
+# see FEATURE AREAS in dpkg-buildflags(1)
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# see ENVIRONMENT in dpkg-buildflags(1)
+# package maintainers to append CFLAGS
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+# package maintainers to append LDFLAGS
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+
+%:
+	dh $@ --buildsystem-cmake --builddirectory=build
+
+override_dh_clean:  
+	dh_clean    
+	rm -f $(CURDIR)/tests/pln_old/*.pyc
+	rm -f $(CURDIR)/tests/cython/spatial/*.pyc
+	rm -f $(CURDIR)/tests/cython/agents/*.pyc
+	rm -f $(CURDIR)/tests/cython/server/*.pyc
+	rm -f $(CURDIR)/opencog/python/web/*.pyc
+	rm -f $(CURDIR)/opencog/python/web/api/*.pyc
+	rm -f $(CURDIR)/tests/cython/spacetime/*.pyc
+	rm -f $(CURDIR)/opencog/nlp/anaphora/*.pyc
+	rm -f $(CURDIR)/opencog/nlp/anaphora/agents/*.pyc
+	rm -f $(CURDIR)/opencog/python/blending/*.pyc
+	rm -f $(CURDIR)/opencog/python/blending/util/*.pyc
+	rm -f $(CURDIR)/opencog/python/blending/src/chooser/*.pyc
+	rm -f $(CURDIR)/opencog/python/blending/src/*.pyc
+	rm -f $(CURDIR)/tests/python/blending_test/*.pyc
+	rm -f $(CURDIR)/tests/python/restapi/*.pyc
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DCONFDIR="/etc"
+
+override_dh_auto_install:
+	dh_auto_install
+	rm -f $(CURDIR)/debian/opencog/usr/lib/python2.7/dist-packages/opencog/__init__.py
+	rm -f $(CURDIR)/debian/opencog/usr/lib/python3.7/dist-packages/opencog/__init__.py
+	mv $(CURDIR)/debian/opencog/usr/lib/python3.7 $(CURDIR)/debian/opencog/usr/lib/python3
+	install -d $(CURDIR)/debian/opencog/usr/bin
+	install -m 755 $(CURDIR)/build/opencog/nlp/irc/cogita $(CURDIR)/debian/opencog/usr/bin
+	install -m 755 $(CURDIR)/build/opencog/visualization/gtk-visualizer/OpenCogAtomSpaceVisualizer $(CURDIR)/debian/opencog/usr/bin
+	install -m 755 $(CURDIR)/opencog/nlp/aiml/import/aiml2psi.pl $(CURDIR)/debian/opencog/usr/bin/aiml2psi
+
+override_dh_strip:
+	dh_strip
+#	chrpath -d debian/opencog/usr/lib/opencog/*.so
+#	chrpath -d debian/opencog/usr/lib/opencog/modules/*.so

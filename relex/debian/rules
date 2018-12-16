@@ -1,0 +1,35 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+
+# see FEATURE AREAS in dpkg-buildflags(1)
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# see ENVIRONMENT in dpkg-buildflags(1)
+# package maintainers to append CFLAGS
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+# package maintainers to append LDFLAGS
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+
+%:
+	dh $@
+
+override_dh_install:
+	dh_install
+	ant -DINSTALLDIR=$(CURDIR)/debian/opencog-relex/usr/share/java install
+	install -d $(CURDIR)/debian/opencog-relex/usr/bin
+	install -d $(CURDIR)/debian/opencog-relex/usr/share/relex/data/wordnet
+	install -m 755 $(CURDIR)/doc-splitter.sh $(CURDIR)/debian/opencog-relex/usr/bin/doc-splitter
+	install -m 755 $(CURDIR)/opencog-server.sh $(CURDIR)/debian/opencog-relex/usr/bin/opencog-server
+	install -m 755 $(CURDIR)/relation-extractor.sh $(CURDIR)/debian/opencog-relex/usr/bin/relation-extractor
+	install -m 755 $(CURDIR)/link-grammar-server.sh $(CURDIR)/debian/opencog-relex/usr/bin/linkgrammar-server
+	install -m 755 $(CURDIR)/plain-text-server.sh $(CURDIR)/debian/opencog-relex/usr/bin/plain-text-server
+	install -m 755 $(CURDIR)/batch-process.sh $(CURDIR)/debian/opencog-relex/usr/bin/batch-process
+	install -m 755 $(CURDIR)/src/perl/cff-to-opencog.pl $(CURDIR)/debian/opencog-relex/usr/bin/cff-to-opencog
+	install -m 755 $(CURDIR)/src/perl/cpu-control.pl $(CURDIR)/debian/opencog-relex/usr/bin/cpu-control
+	install -m 644 $(CURDIR)/data/wordnet/file_properties.xml $(CURDIR)/debian/opencog-relex/usr/share/relex/data/wordnet
+	install -m 644 $(CURDIR)/data/relex-semantic.algs $(CURDIR)/debian/opencog-relex/usr/share/relex/data
+	install -m 644 $(CURDIR)/test-corpus.txt $(CURDIR)/debian/opencog-relex/usr/share/relex/data

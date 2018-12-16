@@ -1,0 +1,6 @@
+fix_perl_path.patch
+plain-text-server.sh-debian.patch
+relation-extractor.sh-debian.patch
+opencog-server.sh-debian.patch
+link-grammar-server.sh-debian.patch
+batch-process.sh-debian.patch

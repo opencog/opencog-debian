@@ -1,0 +1,34 @@
+--- a/opencog-server.sh
++++ b/opencog-server.sh
+@@ -22,9 +22,8 @@
+ VM_OPTS="-Xmx2048m"
+ 
+ RELEX_OPTS="\
+-	-Djava.library.path=/usr/lib:/usr/lib/jni:/usr/local/lib:/usr/local/lib/jni \
+-	-Drelex.algpath=data/relex-semantic.algs \
+-	-Dwordnet.configfile=data/wordnet/file_properties.xml \
++	-Drelex.algpath=/usr/share/relex/data/relex-semantic.algs \
++	-Dwordnet.configfile=/usr/share/relex/data/wordnet/file_properties.xml \
+ 	"
+ 
+ CLASSPATH="-classpath \
+@@ -37,15 +36,16 @@
+ /usr/local/share/java/maxent-2.5.2.jar:\
+ /usr/local/share/java/maxent-2.4.0.jar:\
+ /usr/local/share/java/trove.jar:\
+-/usr/local/share/java/jwnl-1.4rc2.jar:\
+-/usr/local/share/java/jwnl.jar:\
++/usr/share/java/jwnl-1.4_rc3.jar:\
++/usr/share/java/jwnl.jar:\
+ /usr/share/java/commons-logging.jar:\
+ /usr/share/java/slf4j-api.jar:\
+ /usr/share/java/logback-core.jar:\
+ /usr/share/java/logback-classic.jar:\
+ /usr/share/java/gnu-getopt.jar:\
+-/usr/share/java/linkgrammar.jar:\
+ /usr/local/share/java/linkgrammar.jar:\
++/usr/share/java/linkgrammar.jar:\
++/usr/share/java/relex.jar:\
+ "
+ 
+ # Return with Link Grammar and Relex output on default port 4444.

@@ -1,0 +1,8 @@
+--- a/opencog/nlp/aiml/import/aiml2psi.pl
++++ b/opencog/nlp/aiml/import/aiml2psi.pl
+@@ -1,4 +1,4 @@
+-#! /usr/bin/env perl
++#! /usr/bin/perl
+ #
+ # Convert AIML files to OpenCog Atomese.
+ #

@@ -1,0 +1,11 @@
+--- a/opencog/cython/PythonEval.cc
++++ b/opencog/cython/PythonEval.cc
+@@ -633,7 +633,7 @@
+ #if PY_MAJOR_VERSION == 2
+         char* pythonErrorString = PyBytes_AsString(pyErrorString);
+ #else
+-        char* pythonErrorString = PyUnicode_AsUTF8(pyErrorString);
++        const char* pythonErrorString = PyUnicode_AsUTF8(pyErrorString);
+ #endif
+         if (pythonErrorString) {
+             errorStringStream << ": " << pythonErrorString << ".";

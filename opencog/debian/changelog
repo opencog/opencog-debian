@@ -1,0 +1,115 @@
+opencog (0.0~git20181216.68924d8-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sun, 16 Dec 2018 11:18:06 +0900
+
+opencog (0.0~git20181215.68924d8-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 15 Dec 2018 11:43:31 +0900
+
+opencog (0.0~git20180629.9cf4f10-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Fri, 29 Jun 2018 18:04:26 +0900
+
+opencog (0.0~git20180615.8ff1cb5-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Fri, 15 Jun 2018 15:40:28 +0900
+
+opencog (0.0~git20180501.f2ae452-3) mhatta-unstable; urgency=medium
+
+  * Rebuild.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 01 May 2018 05:55:42 +0900
+
+opencog (0.0~git20180501.f2ae452-2) mhatta-unstable; urgency=medium
+
+  * Fixed path to Python modules.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 01 May 2018 04:37:45 +0900
+
+opencog (0.0~git20180501.f2ae452-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 01 May 2018 04:04:15 +0900
+
+opencog (0.0~git20180424.f2ae452-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 24 Apr 2018 19:39:46 +0900
+
+opencog (0.0~git20180423.c0b4672-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Bumped Standards-Version to 4.1.4.
+	
+ -- Masayuki Hatta <mhatta@debian.org>  Mon, 23 Apr 2018 12:16:16 +0900
+
+opencog (0.0~git20180327.c0b4672-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 27 Mar 2018 18:28:30 +0900
+
+opencog (0.0~git20170909.55b2698-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 09 Sep 2017 04:35:07 +0900
+
+opencog (0.0~git20170907.069ce4d-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+ 
+ -- Masayuki Hatta <mhatta@debian.org>  Thu, 07 Sep 2017 16:53:22 +0900
+
+opencog (0.0~git20170831.c0b4672-3) mhatta-unstable; urgency=medium
+
+  * Enabled tests.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Fri, 01 Sep 2017 16:40:30 +0900
+
+opencog (0.0~git20170831.c0b4672-2) mhatta-unstable; urgency=medium
+
+  * Now installs cogita & aiml2psi.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Fri, 01 Sep 2017 13:05:19 +0900
+
+opencog (0.0~git20170831.c0b4672-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Thu, 31 Aug 2017 12:10:19 +0900
+
+opencog (0.0~git20170819.5cf5fa8-3) mhatta-unstable; urgency=medium
+
+  * Really removes __init__.py.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 19 Aug 2017 05:23:50 +0900
+
+opencog (0.0~git20170819.5cf5fa8-2) mhatta-unstable; urgency=medium
+
+  * debian/control: added libcogutil-dev and opencog-atomspace to Deps.
+  * debian/rules: removing __init__.py (also included in opencog-atomspace).
+	
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 19 Aug 2017 04:52:58 +0900
+
+opencog (0.0~git20170819.5cf5fa8-1) mhatta-unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 19 Aug 2017 01:04:45 +0900
+
+opencog (0.0~git20170812.c1255f7-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Wed, 09 Aug 2017 03:51:03 +0900

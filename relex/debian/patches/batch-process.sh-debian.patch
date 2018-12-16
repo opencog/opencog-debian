@@ -1,0 +1,35 @@
+--- a/batch-process.sh
++++ b/batch-process.sh
+@@ -20,9 +20,8 @@
+ VM_OPTS="-Xmx1024m"
+ 
+ RELEX_OPTS="\
+-	-Djava.library.path=/usr/lib:/usr/lib/jni:/usr/local/lib:/usr/local/lib/jni \
+-	-Drelex.algpath=data/relex-semantic.algs \
+-	-Dwordnet.configfile=data/wordnet/file_properties.xml \
++	-Drelex.algpath=/usr/share/relex/data/relex-semantic.algs \
++	-Dwordnet.configfile=/usr/share/relex/data/wordnet/file_properties.xml \
+ 	"
+ 
+ 
+@@ -34,7 +33,7 @@
+ /usr/local/share/java/opennlp-tools-1.5.0.jar:\
+ /usr/local/share/java/maxent-3.0.0.jar:\
+ /usr/local/share/java/trove.jar:\
+-/usr/local/share/java/jwnl.jar:\
++/usr/share/java/jwnl.jar:\
+ /usr/share/java/commons-logging.jar:\
+ /usr/share/java/slf4j-api.jar:\
+ /usr/share/java/logback-core.jar:\
+@@ -42,9 +41,10 @@
+ /usr/share/java/gnu-getopt.jar:\
+ /usr/local/share/java/linkgrammar.jar:\
+ /usr/share/java/linkgrammar.jar:\
++/usr/share/java/relex.jar:\
+ "
+ 
+-cat test-corpus.txt | \
++cat /usr/share/relex/data/test-corpus.txt | \
+ java $VM_OPTS $RELEX_OPTS $CLASSPATH relex.WebFormat  -n 4 -g
+ 
+ exit 1;

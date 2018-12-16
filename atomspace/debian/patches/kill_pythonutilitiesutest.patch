@@ -1,0 +1,37 @@
+--- a/tests/cython/CMakeLists.txt
++++ b/tests/cython/CMakeLists.txt
+@@ -45,20 +45,20 @@
+ # The PythonUtilitiesUTest tests C++ utility functions used from Cython bindings
+ # outside of those bindings so failures are easier to debug.
+ #
+-ADD_CXXTEST(PythonUtilitiesUTest)
+-
+-TARGET_LINK_LIBRARIES(PythonUtilitiesUTest
+-	PythonEval
+-	utilities_cython
+-	atomspace_cython
+-	backwardchainer_cython
+-	atomspace
+-	${COGUTIL_LIBRARY}
+-)
+-SET_TESTS_PROPERTIES(PythonUtilitiesUTest
+-	PROPERTIES
+-	ENVIRONMENT "PYTHONDONTWRITEBYTECODE=1"
+-	ENVIRONMENT "PYTHONPATH=${PROJECT_BINARY_DIR}/opencog/cython")
++#ADD_CXXTEST(PythonUtilitiesUTest)
++#
++#TARGET_LINK_LIBRARIES(PythonUtilitiesUTest
++#	PythonEval
++#	utilities_cython
++#	atomspace_cython
++#	backwardchainer_cython
++#	atomspace
++#	${COGUTIL_LIBRARY}
++#)
++#SET_TESTS_PROPERTIES(PythonUtilitiesUTest
++#	PROPERTIES
++#	ENVIRONMENT "PYTHONDONTWRITEBYTECODE=1"
++#	ENVIRONMENT "PYTHONPATH=${PROJECT_BINARY_DIR}/opencog/cython")
+ 
+ 
+ IF (HAVE_NOSETESTS)
