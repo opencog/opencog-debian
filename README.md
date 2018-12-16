@@ -43,3 +43,7 @@ Also, you can access the APT repository directly: https://people.debian.org/~mha
 4. Install needed packages for the build by `sudo apt-get build-dep $PACKAGE_NAME`.  Edit `debian/changelog`.
 
 5. In the source dir, run `$ dpkg-buildpackage -rfakeroot`
+
+## License
+
+Public Domain.
