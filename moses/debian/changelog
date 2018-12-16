@@ -1,0 +1,64 @@
+opencog-moses (3.6.10~git20180629.f8932cb-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Fri, 29 Jun 2018 18:17:30 +0900
+
+opencog-moses (3.6.10~git20180615.f8932cb-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Fri, 15 Jun 2018 11:14:28 +0900
+
+opencog-moses (3.6.10~git20180424.f8932cb-1) mhatta-unstable; urgency=medium
+
+  * Test: do not remove rpath.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 24 Apr 2018 19:06:23 +0900
+
+opencog-moses (3.6.10~git20180423.f8932cb-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Bumped Standards-Version to 4.1.4.	
+
+ -- Masayuki Hatta <mhatta@debian.org>  Mon, 23 Apr 2018 04:12:11 +0900
+
+opencog-moses (3.6.10~git20180324.f8932cb-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 24 Mar 2018 18:06:25 +0900
+
+opencog-moses (3.6.10~git20170831.644d1a2-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Thu, 31 Aug 2017 06:25:20 +0900
+
+opencog-moses (3.6.10~git20170825.644d1a2-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+  * debian/control: added libboost-math-dev to Build-Deps.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Fri, 25 Aug 2017 23:39:54 +0900
+
+opencog-moses (3.6.10~git20170819.b5e13ef-1) mhatta-unstable; urgency=medium
+
+  * New upstream release.
+  * debian/opencog-moses.manpages: added.
+  * debian/opencog-moses.examples: added.
+  * debian/docs: added.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 19 Aug 2017 03:04:41 +0900
+
+opencog-moses (3.6.10~git20170807.a3a37c9-2) mhatta-unstable; urgency=medium
+
+  * debian/rules: Added -DCMAKE_BUILD_TYPE=Release.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Thu, 17 Aug 2017 01:26:35 +0900
+
+opencog-moses (3.6.10~git20170807.a3a37c9-1) mhatta-unstable; urgency=medium
+
+  * Initial release.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 08 Aug 2017 01:14:26 +0900

@@ -1,2 +1,3 @@
-# opencog-debian
-OpenCog packaging-related files for Debian / Ubuntu
+# OpenCog packaging-related files for Debian / Ubuntu
+
+This repository contains 

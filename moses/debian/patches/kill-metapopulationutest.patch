@@ -1,0 +1,21 @@
+--- a/tests/moses/CMakeLists.txt
++++ b/tests/moses/CMakeLists.txt
+@@ -48,12 +48,12 @@
+ 	${COGUTIL_LIBRARY}
+ )
+ 
+-ADD_CXXTEST(metapopulationUTest)
+-TARGET_LINK_LIBRARIES(metapopulationUTest
+-	moses
+-	comboreduct
+-	${COGUTIL_LIBRARY}
+-)
++#ADD_CXXTEST(metapopulationUTest)
++#TARGET_LINK_LIBRARIES(metapopulationUTest
++#	moses
++#	comboreduct
++#	${COGUTIL_LIBRARY}
++#)
+ 
+ ADD_CXXTEST(optimizationUTest)
+ TARGET_LINK_LIBRARIES(optimizationUTest
