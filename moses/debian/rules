@@ -24,26 +24,26 @@ override_dh_install:
 
 override_dh_strip:
 	dh_strip
-#	chrpath -d debian/opencog-moses/usr/bin/combo-fmt-converter
-#	chrpath -d debian/opencog-moses/usr/bin/eval-candidate
-#	chrpath -d debian/opencog-moses/usr/bin/eval-candidate-likelihood
-#	chrpath -d debian/opencog-moses/usr/bin/eval-diversity
-#	chrpath -d debian/opencog-moses/usr/bin/eval-features
-#	chrpath -d debian/opencog-moses/usr/bin/eval-table
-#	chrpath -d debian/opencog-moses/usr/bin/feature-selection
-#	chrpath -d debian/opencog-moses/usr/bin/gen-disj-conj
-#	chrpath -d debian/opencog-moses/usr/bin/gen-table
-#	chrpath -d debian/opencog-moses/usr/bin/moses
-#	chrpath -d debian/opencog-moses/usr/lib/libcomboant.so
-#	chrpath -d debian/opencog-moses/usr/lib/libcomboreduct.so
-#	chrpath -d debian/opencog-moses/usr/lib/libfeature_selection.so
-#	chrpath -d debian/opencog-moses/usr/lib/libmoses.so
-#	chrpath -d debian/opencog-moses/usr/lib/libmoses_exec.so
-#	chrpath -d debian/opencog-moses/usr/lib/python2.7/dist-packages/moses/pymoses.so
+	patchelf --remove-rpath debian/opencog-moses/usr/bin/combo-fmt-converter
+	patchelf --remove-rpath debian/opencog-moses/usr/bin/eval-candidate
+	patchelf --remove-rpath debian/opencog-moses/usr/bin/eval-candidate-likelihood
+	patchelf --remove-rpath debian/opencog-moses/usr/bin/eval-diversity
+	patchelf --remove-rpath debian/opencog-moses/usr/bin/eval-features
+	patchelf --remove-rpath debian/opencog-moses/usr/bin/eval-table
+	patchelf --remove-rpath debian/opencog-moses/usr/bin/feature-selection
+	patchelf --remove-rpath debian/opencog-moses/usr/bin/gen-disj-conj
+	patchelf --remove-rpath debian/opencog-moses/usr/bin/gen-table
+	patchelf --remove-rpath debian/opencog-moses/usr/bin/moses
+	patchelf --remove-rpath debian/opencog-moses/usr/lib/libcomboant.so
+	patchelf --remove-rpath debian/opencog-moses/usr/lib/libcomboreduct.so
+	patchelf --remove-rpath debian/opencog-moses/usr/lib/libfeature_selection.so
+	patchelf --remove-rpath debian/opencog-moses/usr/lib/libmoses.so
+	patchelf --remove-rpath debian/opencog-moses/usr/lib/libmoses_exec.so
+	patchelf --remove-rpath debian/opencog-moses/usr/lib/python2.7/dist-packages/moses/pymoses.so
 
 override_dh_clean:
 	dh_clean
 	rm -rf $(CURDIR)/tests/cython/moses/*.pyc
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DCONFDIR="/etc" -DCMAKE_BUILD_TYPE=Release
+	dh_auto_configure -- -DCONFDIR="/etc" -DMAKE_BUILD_TYPE=Release

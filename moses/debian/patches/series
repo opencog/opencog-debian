@@ -2,3 +2,4 @@ kill-metapopulationutest.patch
 kill-dynfeatselutest.patch
 kill-tableutest.patch
 kill-typetreeutest.patch
+kill-cythonmoses.patch

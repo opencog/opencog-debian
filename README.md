@@ -1,6 +1,6 @@
 # OpenCog packaging-related files for Debian / Ubuntu
 
-This repository contains files for packaging the [OpenCog](https://github.com/opencog) AI/AGI testbed for Debian / Ubuntu based GNU/Linux distributions.  For general information on OpenCog, visit [the official website](https://opencog.org/)(not much info) or [the offcial Wiki](https://wiki.opencog.org/w/The_Open_Cognition_Project)(a bit better, but mostly outdated).
+This repository contains files for packaging the [OpenCog](https://github.com/opencog) AI/AGI testbed for Debian / Ubuntu based GNU/Linux distributions.  For general information on OpenCog, visit [the official website](https://opencog.org/) or [the offcial Wiki](https://wiki.opencog.org/w/The_Open_Cognition_Project).
 
 ## Pre-built OpenCog packages for Debian sid
 
