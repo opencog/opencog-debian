@@ -1,10 +1,12 @@
 # OpenCog packaging-related files for Debian / Ubuntu
 
-This repository contains files for packaging the [OpenCog](https://github.com/opencog) AI/AGI testbed suite for Debian / Ubuntu based GNU/Linux distributions.
+This repository contains files for packaging the [OpenCog](https://github.com/opencog) AI/AGI testbed for Debian / Ubuntu based GNU/Linux distributions.
 
 ## Pre-built OpenCog packages for Debian sid
 
-I periodically upload pre-built OpenCog packages to my personal Debian APT repository.  I usually build these packages on Debian sid(unstable), but you can use them on Debian testing or the recent Ubuntu releases (and of course, you can quite easily rebuild them by yourself).
+I periodically upload pre-built OpenCog packages to my personal Debian APT repository.  I usually build these packages on Debian sid (unstable), but you can use them on Debian Buster (testing) or the recent Ubuntu releases.  And of course, you can quite easily rebuild them by yourself.
+
+### How to apt-get opencog
 
 1. Put something like the following as /etc/apt/sources.list.d/opencog.list:
 
@@ -24,9 +26,11 @@ $ wget -q -O - https://people.debian.org/~mhatta/mhatta.asc | sudo apt-key add
 $ sudo apt-get update; sudo apt-get install opencog
 ``
 
-There are currently 5 packages available: `opencog`, `opencog-cogutils`, `opencog-atomspace`, `opencog-moses`, `opencog-relex`.  `jwnl`(Java WordNet Library) is not a part of OpenCog, but it is available in this APT repository since `opencog-relex` uses it and not available in the main Debian archive.  `link-grammar` is avavilable in the main Debian archive.
+There are currently 5 packages available: `opencog`, `opencog-cogutils`, `opencog-atomspace`, `opencog-moses`, `opencog-relex`.  `opencog` depends on the others, so `apt-get install opencog` should be enough.
 
-You can access the APT repository directly: https://people.debian.org/~mhatta/debian/mhatta-unstable/ It contains old versions.
+`jwnl`(Java WordNet Library) is not a part of OpenCog, but it is available in this APT repository since `opencog-relex` uses it and not available in the main Debian archive.  `link-grammar` is [avavilable in the main Debian archive](https://tracker.debian.org/pkg/link-grammar) but has been sadly orphaned and not well-maintained.
+
+Also, you can access the APT repository directly: https://people.debian.org/~mhatta/debian/mhatta-unstable/. You can get contains older versions by hand.
 
 ## Building OpenCog by yourself
 
