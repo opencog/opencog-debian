@@ -17,6 +17,6 @@ cd $DEB_DIR_NAME && rm -rf .git && find . -type f -name .gitignore -exec rm {} \
 
 tar -cvjSf $DEB_ARCHIVE_NAME.orig.tar.bz2 $DEB_DIR_NAME
 
-cp -R debian $DEB_DIR_NAME
+cp -R ../opencog-debian/atomspace/debian $DEB_DIR_NAME
 
 cd $DEB_DIR_NAME && dch -v $VERSION~git$DATE.$GIT_HASH-1 && cd ..

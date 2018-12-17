@@ -1,3 +1,9 @@
+opencog-relex (1.6.3~git20181217.e8e3ef4-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Mon, 17 Dec 2018 09:02:14 +0900
+
 opencog-relex (1.6.3~git20181216.e8e3ef4-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.

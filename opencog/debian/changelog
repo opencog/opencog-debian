@@ -1,8 +1,8 @@
-opencog (0.0~git20181216.68924d8-2) mhatta-unstable; urgency=medium
+opencog (0.0~git20181217.68924d8-1) mhatta-unstable; urgency=medium
 
-  * Depends on opencog-moses.
+  * New upstream snapshot.
 
- -- Masayuki Hatta <mhatta@debian.org>  Sun, 16 Dec 2018 16:19:37 +0900
+ -- Masayuki Hatta <mhatta@debian.org>  Mon, 17 Dec 2018 09:07:44 +0900
 
 opencog (0.0~git20181216.68924d8-1) mhatta-unstable; urgency=medium
 

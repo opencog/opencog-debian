@@ -28,22 +28,52 @@ $ sudo apt-get update; sudo apt-get install opencog
 
 There are currently 5 packages available: `opencog`, `opencog-cogutils`, `opencog-atomspace`, `opencog-moses`, `opencog-relex`.  `opencog` depends on the others, so `apt-get install opencog` should be enough.  `apt-get source`,`apt-get build-dep`, etc. should also work.
 
-`jwnl`(Java WordNet Library) is not a part of OpenCog, but it is available in this APT repository since `opencog-relex` uses it and not available in the main Debian archive.  `link-grammar` is [avavilable in the main Debian archive](https://tracker.debian.org/pkg/link-grammar) but sadly has been orphaned and has no Debian maintainer currently.
+`jwnl`(Java WordNet Library) is not a part of OpenCog, but is available in this APT repository since `opencog-relex` uses it and not available in the main Debian archive.  `link-grammar` is [avavilable in the main Debian archive](https://tracker.debian.org/pkg/link-grammar) but sadly has been orphaned and has no Debian maintainer currently.
 
 Also, you can access the APT repository directly: https://people.debian.org/~mhatta/debian/mhatta-unstable/. You can download older packages from there by hand.
 
 ## Building OpenCog by yourself using these files
 
-1. Clone each OpenCog GitHub repos.
+1. Clone this repo into a directory.
 
-2. Copy `debian/` and `update-$REPO_NAME.sh` into that directory.
+2. Create directories, then clone each OpenCog GitHub repo into those dirs.
 
-3. Run `update-$REPO_NAME.sh`.  This will create the orig source tarball and copy `debian/` into the source dir.
+3. Copy `update-$REPO_NAME.sh` into each directory.
 
-4. Install needed packages for the build by `sudo apt-get build-dep $PACKAGE_NAME`.  Edit `debian/changelog`.
+So the directory structure will look like the following:
 
-5. In the source dir, run `$ dpkg-buildpackage -rfakeroot`
+```
+.
+├── atomspace
+│   ├── atomspace (repo)
+│   └── update-atomspace.sh
+├── cogutils
+│   ├── cogutils (repo)
+│   └── update-cogutils.sh
+├── moses
+│   ├── moses (repo)
+│   └── update-moses.sh
+├── opencog
+│   ├── opencog (repo)
+│   └── update-opencog.sh
+├── opencog-debian (repo)
+│   ├── README.md
+│   ├── atomspace
+│   ├── cogutils
+│   ├── moses
+│   ├── opencog
+│   └── relex
+├── relex
+     ├── relex (repo)
+     └── update-relex.sh
+```
+
+4. Run `update-$REPO_NAME.sh`.  This will create the source dir and the orig source tarball, then copy `debian/` into the source dir.
+
+5. Install needed packages for the build by `sudo apt-get build-dep $PACKAGE_NAME`.  Edit `debian/changelog`.
+
+6. In the source dir, run `$ dpkg-buildpackage -rfakeroot`
 
 ## License
 
- Public Domain.
+Files in this repo are put in Public Domain.

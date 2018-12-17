@@ -2,6 +2,8 @@
 
 REPO_NAME=moses
 DEB_NAME=opencog-moses
+
+# You can find this in moses/moses/man/moses.1
 VERSION=3.6.10
 DATE=`date "+%Y%m%d"`
 GIT_HASH=`cd $REPO_NAME && git rev-parse --short=7 HEAD`
@@ -15,7 +17,7 @@ cd $DEB_DIR_NAME && rm -rf .git && find . -type f -name .gitignore -exec rm {} \
 
 tar -cvjSf $DEB_ARCHIVE_NAME.orig.tar.bz2 $DEB_DIR_NAME
 
-cp -R debian $DEB_DIR_NAME
+cp -R ../opencog-debian/moses/debian $DEB_DIR_NAME
 
 cd $DEB_DIR_NAME && dch -v $VERSION~git$DATE.$GIT_HASH-1 && cd ..
 

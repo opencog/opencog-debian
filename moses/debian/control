@@ -11,6 +11,7 @@ Vcs-Browser: https://github.com/opencog/moses.git
 Package: opencog-moses
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, python
+Recommends: python-ipykernel
 Description: Meta-Optimizing Semantic Evolutionary Search
  MOSES is a machine-learning tool; it is an "evolutionary program learner".
  It is capable of learning short programs that capture patterns in input

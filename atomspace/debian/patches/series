@@ -1,5 +1,4 @@
 fix-pathes-opencog.scm.patch
-pythoneval_fix.patch
 kill-pythonevalutest.patch
 kill-multiatomspaceutest.patch
 kill-vectorapiutest.patch
