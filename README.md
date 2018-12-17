@@ -46,4 +46,4 @@ Also, you can access the APT repository directly: https://people.debian.org/~mha
 
 ## License
 
-Public Domain.
+ Public Domain.
