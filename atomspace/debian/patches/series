@@ -5,3 +5,4 @@ kill_nestedpututest.patch
 kill_scmopenogtestrunnerpass.patch
 kill_pythonutilitiesutest.patch
 kill_cythonbackwardchainer.patch
+kill_streamutest.patch

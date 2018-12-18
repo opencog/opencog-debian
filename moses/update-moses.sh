@@ -10,6 +10,8 @@ GIT_HASH=`cd $REPO_NAME && git rev-parse --short=7 HEAD`
 DEB_DIR_NAME=$DEB_NAME-$VERSION~git$DATE.$GIT_HASH
 DEB_ARCHIVE_NAME=$DEB_NAME\_$VERSION~git$DATE.$GIT_HASH
 
+rm -rf ~/.cache/guile
+
 cd $REPO_NAME && git fetch upstream && git merge upstream/master && cd ..
 cp -R $REPO_NAME $DEB_DIR_NAME
 
