@@ -1,3 +1,9 @@
+opencog-cogutils (2.0.3~git20190820.0cbd05b-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 20 Aug 2019 13:03:36 -0700
+
 opencog-cogutils (2.0.3~git20181218.042501e-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.
