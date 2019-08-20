@@ -2,7 +2,7 @@ Source: opencog-cogutils
 Section: libdevel
 Priority: optional
 Maintainer: Masayuki Hatta <mhatta@debian.org>
-Build-Depends: debhelper (>= 10), cmake, cxxtest, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, libiberty-dev, doxygen, graphviz, binutils-dev, python-dev, patchelf
+Build-Depends: debhelper (>= 11), cmake, cxxtest, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, libiberty-dev, doxygen, graphviz, binutils-dev, python-dev, patchelf
 Standards-Version: 4.4.0
 Homepage: http://opencog.org/
 Vcs-Git: https://github.com/opencog/cogutils.git
