@@ -1,7 +1,7 @@
 --- a/tests/matrix/CMakeLists.txt
 +++ b/tests/matrix/CMakeLists.txt
-@@ -18,4 +18,4 @@
- 	${GUILE_LIBRARIES}
+@@ -17,4 +17,4 @@
+ 	smob
  )
  
 -ADD_CXXTEST(VectorAPIUTest)
