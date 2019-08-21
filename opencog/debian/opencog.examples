@@ -1,6 +1,2 @@
-opencog/learning/PatternMiner/ugly_male_soda-drinker_corpus.scm
 opencog/nlp/chatbot/run-chatbot.scm
 lib/opencog-chatbot.conf
-lib/opencog_patternminer.conf
-lib/opencog_patternminer_nlp.conf
-lib/opencog_patternminer_pln.conf

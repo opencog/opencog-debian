@@ -43,12 +43,12 @@ override_dh_auto_install:
 	rm -f $(CURDIR)/debian/opencog/usr/lib/python2.7/dist-packages/opencog/__init__.py
 	rm -f $(CURDIR)/debian/opencog/usr/lib/python3.7/dist-packages/opencog/__init__.py
 	mv $(CURDIR)/debian/opencog/usr/lib/python3.7 $(CURDIR)/debian/opencog/usr/lib/python3
+	mv $(CURDIR)/debian/opencog/usr/lib/python3/site-packages $(CURDIR)/debian/opencog/usr/lib/python3/dist-packages
 	install -d $(CURDIR)/debian/opencog/usr/bin
 	install -m 755 $(CURDIR)/build/opencog/nlp/irc/cogita $(CURDIR)/debian/opencog/usr/bin
-	install -m 755 $(CURDIR)/build/opencog/visualization/gtk-visualizer/OpenCogAtomSpaceVisualizer $(CURDIR)/debian/opencog/usr/bin
 	install -m 755 $(CURDIR)/opencog/nlp/aiml/import/aiml2psi.pl $(CURDIR)/debian/opencog/usr/bin/aiml2psi
 
 override_dh_strip:
 	dh_strip
-#	chrpath -d debian/opencog/usr/lib/opencog/*.so
-#	chrpath -d debian/opencog/usr/lib/opencog/modules/*.so
+	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" debian/opencog/usr/lib/opencog/*.so
+	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" debian/opencog/usr/lib/python3/dist-packages/opencog/*.so

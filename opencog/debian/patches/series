@@ -3,3 +3,4 @@ run-chatbot.scm-debian.patch
 dicts_install_path_fix.patch
 kill_test.patch
 
+test.patch

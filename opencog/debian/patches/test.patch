@@ -1,0 +1,11 @@
+--- a/tests/persist/zmq/events/AtomSpacePublisherModuleUTest.cxxtest
++++ b/tests/persist/zmq/events/AtomSpacePublisherModuleUTest.cxxtest
+@@ -35,7 +35,7 @@
+ 
+ #include <opencog/atomspace/AtomSpace.h>
+ #include <opencog/atoms/atom_types/types.h>
+-#include <opencog/attention/atom_types.h>
++#include <opencog/attentionbank/types/atom_types.h>
+ #include <opencog/atoms/truthvalue/TruthValue.h>
+ #include <opencog/atoms/truthvalue/SimpleTruthValue.h>
+ #include <opencog/cogserver/server/Module.h>
