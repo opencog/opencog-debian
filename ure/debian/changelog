@@ -1,0 +1,5 @@
+opencog-ure (1.0.0~git20190820.a62b1b1-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 20 Aug 2019 19:56:03 -0700
