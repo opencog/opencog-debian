@@ -19,9 +19,6 @@
 
 override_dh_install:
 	dh_install
-#	mv $(CURDIR)/debian/opencog-miner/usr/lib/python3.7 $(CURDIR)/debian/opencog-miner/usr/lib/python3
-#	mv $(CURDIR)/debian/opencog-ure/usr/lib/python3/site-packages $(CURDIR)/debian/opencog-ure/usr/lib/python3/dist-packages
-#	rm -f $(CURDIR)/debian/opencog-ure/usr/lib/python3/dist-packages/opencog/__init__.py
 
 override_dh_strip:
 	dh_strip
