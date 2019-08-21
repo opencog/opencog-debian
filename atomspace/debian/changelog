@@ -1,3 +1,9 @@
+opencog-atomspace (5.0.4~git20190820.8626e1a-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 20 Aug 2019 14:17:56 -0700
+
 opencog-atomspace (5.0.4~git20181218.5403720-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.
