@@ -1,0 +1,14 @@
+--- a/tests/miner/CMakeLists.txt
++++ b/tests/miner/CMakeLists.txt
+@@ -13,7 +13,7 @@
+   minerutestutils
+ )
+ 
+-ADD_CXXTEST(SurprisingnessUTest)
+-TARGET_LINK_LIBRARIES(SurprisingnessUTest
+-  minerutestutils
+-)
++#ADD_CXXTEST(SurprisingnessUTest)
++#TARGET_LINK_LIBRARIES(SurprisingnessUTest
++#  minerutestutils
++#)
