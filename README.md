@@ -64,9 +64,11 @@ So the directory structure will look like the following:
 │   ├── README.md
 │   ├── atomspace
 │   ├── cogutils
+│   ├── miner
 │   ├── moses
 │   ├── opencog
 │   └── relex
+│   └── ure
 ├── relex
 |    ├── relex (repo)
 |    └── update-relex.sh
