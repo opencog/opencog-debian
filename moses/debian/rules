@@ -19,27 +19,26 @@
 
 override_dh_install:
 	dh_install
-	install -d $(CURDIR)/debian/opencog-moses/usr/lib/python2.7/dist-packages
-	mv $(CURDIR)/debian/opencog-moses/usr/share/moses/python/moses $(CURDIR)/debian/opencog-moses/usr/lib/python2.7/dist-packages/moses
 
 override_dh_strip:
 	dh_strip
-	patchelf --remove-rpath debian/opencog-moses/usr/bin/combo-fmt-converter
-	patchelf --remove-rpath debian/opencog-moses/usr/bin/eval-candidate
-	patchelf --remove-rpath debian/opencog-moses/usr/bin/eval-candidate-likelihood
-	patchelf --remove-rpath debian/opencog-moses/usr/bin/eval-diversity
-	patchelf --remove-rpath debian/opencog-moses/usr/bin/eval-features
-	patchelf --remove-rpath debian/opencog-moses/usr/bin/eval-table
-	patchelf --remove-rpath debian/opencog-moses/usr/bin/feature-selection
-	patchelf --remove-rpath debian/opencog-moses/usr/bin/gen-disj-conj
-	patchelf --remove-rpath debian/opencog-moses/usr/bin/gen-table
-	patchelf --remove-rpath debian/opencog-moses/usr/bin/moses
-	patchelf --remove-rpath debian/opencog-moses/usr/lib/libcomboant.so
-	patchelf --remove-rpath debian/opencog-moses/usr/lib/libcomboreduct.so
-	patchelf --remove-rpath debian/opencog-moses/usr/lib/libfeature_selection.so
-	patchelf --remove-rpath debian/opencog-moses/usr/lib/libmoses.so
-	patchelf --remove-rpath debian/opencog-moses/usr/lib/libmoses_exec.so
-	patchelf --remove-rpath debian/opencog-moses/usr/lib/python2.7/dist-packages/moses/pymoses.so
+#	patchelf --remove-rpath $(CURDIR)/debian/opencog-moses/usr/bin/combo-fmt-converter
+#	patchelf --remove-rpath $(CURDIR)/debian/opencog-moses/usr/bin/eval-candidate
+#	patchelf --remove-rpath $(CURDIR)/debian/opencog-moses/usr/bin/eval-candidate-likelihood
+#	patchelf --remove-rpath $(CURDIR)/debian/opencog-moses/usr/bin/eval-diversity
+#	patchelf --remove-rpath $(CURDIR)/debian/opencog-moses/usr/bin/eval-features
+#	patchelf --remove-rpath $(CURDIR)/debian/opencog-moses/usr/bin/eval-table
+#	patchelf --remove-rpath $(CURDIR)/debian/opencog-moses/usr/bin/feature-selection
+#	patchelf --remove-rpath $(CURDIR)/debian/opencog-moses/usr/bin/gen-disj-conj
+#	patchelf --remove-rpath $(CURDIR)/debian/opencog-moses/usr/bin/gen-table
+#	patchelf --remove-rpath $(CURDIR)/debian/opencog-moses/usr/bin/moses
+	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/lib/libcomboant.so
+	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/lib/libcomboreduct.so
+	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/lib/libfeature_selection.so
+	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/lib/libmoses.so
+	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/lib/libmoses_exec.so
+	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/lib/python3/dist-packages/opencog/pymoses.so
+	rm -f $(CURDIR)/debian/opencog-moses/usr/lib/python3/dist-packages/opencog/__init__.py
 
 override_dh_clean:
 	dh_clean

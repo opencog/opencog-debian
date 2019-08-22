@@ -1,0 +1,23 @@
+--- a/tests/moses/CMakeLists.txt
++++ b/tests/moses/CMakeLists.txt
+@@ -94,13 +94,13 @@
+ 	${COGUTIL_LIBRARY}
+ )
+ 
+-ADD_CXXTEST(selectionUTest)
+-TARGET_LINK_LIBRARIES(selectionUTest
+-	moses_exec
+-	moses
+-	comboreduct
+-	${COGUTIL_LIBRARY}
+-)
++#ADD_CXXTEST(selectionUTest)
++#TARGET_LINK_LIBRARIES(selectionUTest
++#	moses_exec
++#	moses
++#	comboreduct
++#	${COGUTIL_LIBRARY}
++#)
+ 
+ #ADD_CXXTEST(dynFeatSelUTest)
+ #TARGET_LINK_LIBRARIES(dynFeatSelUTest
