@@ -14,6 +14,7 @@ I periodically upload pre-built OpenCog packages to my personal Debian APT repos
 deb https://people.debian.org/~mhatta/debian mhatta-unstable/
 deb-src https://people.debian.org/~mhatta/debian mhatta-unstable/
 ```
+
 2. You need to add my GPG pubkey.
 
 ``
@@ -26,7 +27,7 @@ $ wget -q -O - https://people.debian.org/~mhatta/mhatta.asc | sudo apt-key add
 $ sudo apt-get update; sudo apt-get install opencog
 ``
 
-There are currently 5 packages available: `opencog`, `opencog-cogutils`, `opencog-atomspace`, `opencog-moses`, `opencog-relex`.  `opencog` depends on the others, so `apt-get install opencog` should be enough.  `apt-get source`,`apt-get build-dep`, etc. should also work.
+There are currently 7 packages available: `opencog`, `opencog-cogutils`, `opencog-atomspace`, `opencog-moses`, `opencog-relex`, `opencog-miner`, `opencog-ure`. `opencog` depends on the others, so `apt-get install opencog` should be enough.  `apt-get source`,`apt-get build-dep`, etc. should also work.
 
 `jwnl`(Java WordNet Library) is not a part of OpenCog, but is available in this APT repository since `opencog-relex` uses it and not available in the main Debian archive.  `link-grammar` is [avavilable in the main Debian archive](https://tracker.debian.org/pkg/link-grammar) but sadly has been orphaned and has no Debian maintainer currently.
 
@@ -50,6 +51,9 @@ So the directory structure will look like the following:
 ├── cogutils
 │   ├── cogutils (repo)
 │   └── update-cogutils.sh
+├── miner
+│   ├── miner (repo)
+│   └── update-miner.sh
 ├── moses
 │   ├── moses (repo)
 │   └── update-moses.sh
@@ -64,8 +68,11 @@ So the directory structure will look like the following:
 │   ├── opencog
 │   └── relex
 ├── relex
-     ├── relex (repo)
-     └── update-relex.sh
+|    ├── relex (repo)
+|    └── update-relex.sh
+├── ure
+     ├── ure (repo)
+     └── update-ure.sh
 ```
 
 4. Run `update-$REPO_NAME.sh`.  This will create the source dir and the orig source tarball, then copy `debian/` into the source dir.
