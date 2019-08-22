@@ -4,7 +4,7 @@ This repository contains files for packaging the [OpenCog](https://github.com/op
 
 ## Pre-built OpenCog packages for Debian sid
 
-I periodically upload pre-built OpenCog packages to my personal Debian APT repository.  I usually build these packages on Debian sid (unstable), but you can use them on Debian Buster (testing) or the recent Ubuntu releases.  And of course, you can quite easily rebuild them by yourself.
+I periodically upload pre-built OpenCog packages to my personal Debian APT repository.  I usually build these packages on Debian sid (unstable), but you can use them on Debian Bullseye (testing) or the recent Ubuntu releases.  And of course, you can quite easily rebuild them by yourself.
 
 ### How to apt-get opencog
 

@@ -1,3 +1,9 @@
+opencog-miner (0.0~git20190822.3ba47d3-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Thu, 22 Aug 2019 09:42:07 -0700
+
 opencog-miner (0.0~git20190821.3ba47d3-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.
