@@ -1,3 +1,4 @@
 opencog/nlp/chatbot/run-chatbot.scm
 lib/opencog-chatbot.conf
-examples
+examples/*
+

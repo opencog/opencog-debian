@@ -9,24 +9,5 @@
 -	"
 +RELEX_OPTS="-Dwordnet.configfile=/usr/share/relex/data/wordnet/file_properties.xml"
  
- CLASSPATH="-classpath \
- bin:\
-@@ -33,8 +31,8 @@
- /usr/local/share/java/maxent-3.0.0.jar:\
- /usr/local/share/java/maxent-2.5.2.jar:\
- /usr/local/share/java/trove.jar:\
--/usr/local/share/java/jwnl-1.4rc2.jar:\
--/usr/local/share/java/jwnl.jar:\
-+/usr/share/java/jwnl-1.4_rc3.jar:\
-+/usr/share/java/jwnl.jar:\
- /usr/share/java/commons-logging.jar:\
- /usr/share/java/slf4j-api.jar:\
- /usr/share/java/logback-core.jar:\
-@@ -42,6 +40,7 @@
- /usr/share/java/gnu-getopt.jar:\
- /usr/share/java/linkgrammar.jar:\
- /usr/local/share/java/linkgrammar.jar:\
-+/usr/share/java/relex.jar:\
- "
+ CLASSPATH='-classpath ./target/classes:./target/lib/*'
  # java $VM_OPTS $RELEX_OPTS $CLASSPATH relex.PlainTextServer --port 3333 --lang ru
- java $VM_OPTS $RELEX_OPTS $CLASSPATH relex.PlainTextServer --port 3333

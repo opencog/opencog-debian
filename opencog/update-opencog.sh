@@ -23,3 +23,4 @@ cp -R ../opencog-debian/opencog/debian $DEB_DIR_NAME
 
 cd $DEB_DIR_NAME && dch -v $VERSION~git$DATE.$GIT_HASH-1 && cd ..
 
+cp $DEB_DIR_NAME/debian/changelog ../opencog-debian/$REPO_NAME/debian

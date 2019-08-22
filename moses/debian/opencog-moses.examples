@@ -1,4 +1,1 @@
-examples/example-ant
-examples/example-data
-examples/example-progs
-examples/moses.py
+examples/*
