@@ -4,13 +4,13 @@ Priority: optional
 Maintainer: Masayuki Hatta <mhatta@debian.org>
 Build-Depends: debhelper (>= 11), libcogutil-dev, opencog-atomspace, opencog-moses, opencog-ure, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-signals-dev, libboost-system-dev, libboost-thread-dev, cmake, libtbb-dev, libzmq3-dev, liblink-grammar-dev (>= 5.6.2), valgrind, haskell-stack, cython, python-dev, protobuf-compiler, ghc, libcpprest-dev, guile-2.2-dev, liboctomap-dev, uuid-dev, libjsoncpp-dev, patchelf
 Standards-Version: 4.4.0
-Homepage:http://opencog.org
+Homepage:https://opencog.org
 Vcs-Git: https://github.com/opencog/opencog.git
 Vcs-Browser: https://github.com/opencog/opencog.git
 
 Package: opencog
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, opencog-atomspace, opencog-ure, opencog-moses, libcogutil-dev, python, python3
+Depends: ${shlibs:Depends}, ${misc:Depends}, opencog-atomspace, opencog-ure, opencog-moses|opencog-asmoses, libcogutil-dev, python, python3
 Recommends: jupyter, jupyter-qtconsole
 Description: framework for Artificial General Intelligence (AGI)
  OpenCog is a framework for developing AI systems, especially appropriate for

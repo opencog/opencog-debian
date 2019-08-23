@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Masayuki Hatta <mhatta@debian.org>
 Build-Depends: debhelper (>= 11), cmake, cxxtest, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, libiberty-dev, binutils-dev, python-dev, python3-dev, valgrind, cython, opencog-atomspace, opencog-ure, python-nose2, python3-nose, guile-2.2-dev, patchelf
 Standards-Version: 4.4.0
-Homepage: http://opencog.org/
+Homepage: https://opencog.org/
 Vcs-Git: https://github.com/opencog/cogutils.git
 Vcs-Browser: https://github.com/opencog/cogutils.git
 
