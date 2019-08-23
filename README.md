@@ -15,7 +15,7 @@ deb https://people.debian.org/~mhatta/debian mhatta-unstable/
 deb-src https://people.debian.org/~mhatta/debian mhatta-unstable/
 ```
 
-Or you can download [opencog.list](https://people.debian.org/~mhatta/opencog.list) from here.
+Or, you can download [opencog.list](https://people.debian.org/~mhatta/opencog.list) from here.
 
 2. You need to add my GPG pubkey.
 
@@ -47,6 +47,9 @@ So the directory structure will look like the following:
 
 ```
 .
+├── asmoses
+│   ├── asmoses (repo)
+│   └── update-asmoses.sh
 ├── atomspace
 │   ├── atomspace (repo)
 │   └── update-atomspace.sh
