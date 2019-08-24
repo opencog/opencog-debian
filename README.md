@@ -2,6 +2,17 @@
 
 This repository contains files for packaging the [OpenCog](https://github.com/opencog) AI/AGI testbed for Debian / Ubuntu based GNU/Linux distributions.  For general information on OpenCog, visit [the official website](https://opencog.org/) or [the offcial Wiki](https://wiki.opencog.org/w/The_Open_Cognition_Project).
 
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+**Table of Contents**
+
+- [OpenCog packaging-related files for Debian / Ubuntu](#opencog-packaging-related-files-for-debian--ubuntu)
+    - [Pre-built OpenCog packages for Debian sid](#pre-built-opencog-packages-for-debian-sid)
+        - [How to apt-get opencog](#how-to-apt-get-opencog)
+    - [Building OpenCog by yourself using these files](#building-opencog-by-yourself-using-these-files)
+    - [License](#license)
+
+<!-- markdown-toc end -->
+
 ## Pre-built OpenCog packages for Debian sid
 
 I periodically upload pre-built OpenCog packages to my personal Debian APT repository.  I usually build these packages on Debian sid (unstable), but you can use them on Debian Bullseye (testing) or the recent Ubuntu releases.  And of course, you can quite easily rebuild them by yourself.
