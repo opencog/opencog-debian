@@ -36,7 +36,7 @@ override_dh_strip:
 	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-asmoses/usr/lib/opencog/libasfeature_selection.so
 	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-asmoses/usr/lib/opencog/libasmoses.so
 	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-asmoses/usr/lib/opencog/libasmoses_exec.so
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-asmoses/usr/lib/python3/dist-packages/opencog/pymoses.so
+	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-asmoses/usr/lib/python3/dist-packages/opencog/pyasmoses.so
 	rm -f $(CURDIR)/debian/opencog-asmoses/usr/lib/python3/dist-packages/opencog/__init__.py
 
 override_dh_clean:
