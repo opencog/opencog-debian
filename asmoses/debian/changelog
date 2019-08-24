@@ -1,3 +1,15 @@
+opencog-asmoses (3.7.0~git20190824.d4a0f96-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 24 Aug 2019 10:51:32 -0700
+
+opencog-asmoses (3.7.0~git20190824.b43d8b0-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 24 Aug 2019 10:44:10 -0700
+
 opencog-asmoses (3.7.0~git20190823.dcf9e18-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.

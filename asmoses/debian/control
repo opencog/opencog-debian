@@ -11,7 +11,6 @@ Vcs-Browser: https://github.com/opencog/asmoses.git
 Package: opencog-asmoses
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, python3
-Conflicts: opencog-moses
 Recommends: python-ipykernel
 Description: Meta-Optimizing Semantic Evolutionary Search (AtomSpace port)
  MOSES is a machine-learning tool; it is an "evolutionary program learner".
