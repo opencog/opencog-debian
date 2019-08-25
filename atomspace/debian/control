@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/opencog/atomspace.git
 
 Package: opencog-atomspace
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libcogutil-dev, python3
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcogutil-dev, python3, guile-2.2
 Description: OpenCog hypergraph database, query system and rule engine
  The OpenCog AtomSpace is a knowledge representation (KR) database and
  the associated query/reasoning engine to fetch and manipulate that data,
