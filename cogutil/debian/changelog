@@ -1,0 +1,6 @@
+opencog-cogutil (2.0.3~git20200330.99ad9df-1) mhatta-unstable; urgency=medium
+
+  * Initial release (well, not really...).
+  * Renamed opencog-cogutils to opencog-cogutil (followed the upstream).
+
+ -- Masayuki Hatta <mhatta@debian.org>  Mon, 30 Mar 2020 00:55:05 +0900

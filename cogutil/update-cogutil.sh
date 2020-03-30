@@ -1,7 +1,7 @@
 #!/bin/sh
 
-REPO_NAME=cogutils
-DEB_NAME=opencog-cogutils
+REPO_NAME=cogutil
+DEB_NAME=opencog-cogutil
 
 # You can find this in cogutils/opencog/util/cogutil.h
 VERSION=2.0.3
@@ -16,11 +16,11 @@ rm -rf ~/.cache/guile
 cd $REPO_NAME && git fetch upstream && git merge upstream/master && cd ..
 cp -R $REPO_NAME $DEB_DIR_NAME
 
-cd $DEB_DIR_NAME && rm -rf .git && find . -type f -name .gitignore -exec rm {} \; && cd ..
+cd $DEB_DIR_NAME && rm -rf .git && rm -rf .circleci && find . -type f -name .gitignore -exec rm {} \; && cd ..
 
-tar -cvjSf $DEB_ARCHIVE_NAME.orig.tar.bz2 $DEB_DIR_NAME
+tar -cJf $DEB_ARCHIVE_NAME.orig.tar.xz $DEB_DIR_NAME
 
-cp -R ../opencog-debian/cogutils/debian $DEB_DIR_NAME
+cp -R ../opencog-debian/cogutil/debian $DEB_DIR_NAME
 
 cd $DEB_DIR_NAME && dch -v $VERSION~git$DATE.$GIT_HASH-1 && cd ..
 
