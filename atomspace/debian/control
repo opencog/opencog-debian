@@ -2,8 +2,8 @@ Source: opencog-atomspace
 Section: devel
 Priority: optional
 Maintainer: Masayuki Hatta <mhatta@debian.org>
-Build-Depends: debhelper (>= 11), cmake, cxxtest, ghc, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, unixodbc-dev, libzmq3-dev, libprotobuf-dev, libpq-dev, postgresql, postgresql-client, guile-2.2-dev, patchelf, libcogutil-dev, cython, python-dev, python3-dev, valgrind, haskell-stack, libgearman-dev, python-nose2, python3-nose, odbc-postgresql, doxygen, graphviz, protobuf-compiler
-Standards-Version: 4.4.0
+Build-Depends: debhelper (>= 11), cmake, cxxtest, ghc, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, unixodbc-dev, libzmq3-dev, libprotobuf-dev, libpq-dev, postgresql, postgresql-client, guile-2.2-dev, patchelf, libcogutil-dev, cython, python-dev, python3-dev, valgrind, haskell-stack, libgearman-dev, python-nose, python3-nose, odbc-postgresql, doxygen, graphviz, protobuf-compiler
+Standards-Version: 4.5.0
 Homepage: https://opencog.org
 Vcs-Git: https://github.com/opencog/atomspace.git
 Vcs-Browser: https://github.com/opencog/atomspace.git

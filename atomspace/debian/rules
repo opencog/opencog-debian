@@ -35,7 +35,7 @@ override_dh_auto_configure:
 
 override_dh_install:
 	dh_install
-	mv $(CURDIR)/debian/opencog-atomspace/usr/lib/python3.7 $(CURDIR)/debian/opencog-atomspace/usr/lib/python3
+	mv $(CURDIR)/debian/opencog-atomspace/usr/lib/python3.8 $(CURDIR)/debian/opencog-atomspace/usr/lib/python3
 	mv $(CURDIR)/debian/opencog-atomspace/usr/lib/python3/site-packages $(CURDIR)/debian/opencog-atomspace/usr/lib/python3/dist-packages
 
 override_dh_strip:

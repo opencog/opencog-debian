@@ -15,9 +15,9 @@ rm -rf ~/.cache/guile
 cd $REPO_NAME && git fetch upstream && git merge upstream/master && cd ..
 cp -R $REPO_NAME $DEB_DIR_NAME
 
-cd $DEB_DIR_NAME && rm -rf .git && find . -type f -name .gitignore -exec rm {} \; && cd ..
+cd $DEB_DIR_NAME && rm -rf .git .circleci && find . -type f -name .gitignore -exec rm {} \; && cd ..
 
-tar -cvjSf $DEB_ARCHIVE_NAME.orig.tar.bz2 $DEB_DIR_NAME
+tar -cJf $DEB_ARCHIVE_NAME.orig.tar.xz $DEB_DIR_NAME
 
 cp -R ../opencog-debian/atomspace/debian $DEB_DIR_NAME
 

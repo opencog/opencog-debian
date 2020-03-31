@@ -1,4 +1,2 @@
-kill-pythonevalutest.patch
 kill-vectorapiutest.patch
-kill-pythonutilitiesutest.patch
 kill-haskelltest.patch
