@@ -1,10 +1,11 @@
 #!/bin/sh
 
-REPO_NAME=atomspace
-DEB_NAME=opencog-atomspace
+REPO_NAME=cogserver
+DEB_NAME=opencog-cogserver
 
-# You can find this in atomspace/opencog/atomspace/version.h
-VERSION=5.0.4
+# You can find this in ure/opencog/ure/version.h
+VERSION=1.0.0
+
 DATE=`date "+%Y%m%d"`
 GIT_HASH=`cd $REPO_NAME && git rev-parse --short=7 HEAD`
 DEB_DIR_NAME=$DEB_NAME-$VERSION~git$DATE.$GIT_HASH

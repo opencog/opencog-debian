@@ -20,7 +20,7 @@ cd $DEB_DIR_NAME && rm -rf .git && rm -rf .circleci && find . -type f -name .git
 
 tar -cJf $DEB_ARCHIVE_NAME.orig.tar.xz $DEB_DIR_NAME
 
-cp -R ../opencog-debian/cogutil/debian $DEB_DIR_NAME
+cp -R ../opencog-debian/$REPO_NAME/debian $DEB_DIR_NAME
 
 cd $DEB_DIR_NAME && dch -v $VERSION~git$DATE.$GIT_HASH-1 && cd ..
 

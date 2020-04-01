@@ -1,0 +1,8 @@
+--- a/tests/shell/CMakeLists.txt
++++ b/tests/shell/CMakeLists.txt
+@@ -15,4 +15,4 @@
+ 	${Boost_SYSTEM_LIBRARY}
+ )
+ 
+-ADD_CXXTEST(ShellUTest)
++#ADD_CXXTEST(ShellUTest)

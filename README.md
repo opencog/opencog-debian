@@ -41,7 +41,7 @@ $ wget -q -O - https://people.debian.org/~mhatta/mhatta.asc | sudo apt-key add
 $ sudo apt-get update; sudo apt-get install opencog
 ``
 
-There are currently 8 packages available: `opencog`, `opencog-cogutils`, `opencog-atomspace`, `opencog-moses`, `opencog-asmoses`, `opencog-relex`, `opencog-miner`, `opencog-ure`, `opencog-visualization`. `opencog` depends on the others, so `apt-get install opencog` should be enough.  `apt-get source`,`apt-get build-dep`, etc. should also work.
+There are currently 9 packages available: `opencog`, `opencog-cogutil`, `opencog-atomspace`, `opencog-moses`, `opencog-asmoses`, `opencog-relex`, `opencog-miner`, `opencog-cogserver`, `opencog-ure`, `opencog-visualization`. `opencog` depends on the others, so `apt-get install opencog` should be enough.  `apt-get source`,`apt-get build-dep`, etc. should also work.
 
 `jwnl`(Java WordNet Library) is not a part of OpenCog, but is available in this APT repository since `opencog-relex` uses it and not available in the main Debian archive.  `link-grammar` is [avavilable in the main Debian archive](https://tracker.debian.org/pkg/link-grammar) but sadly has been orphaned and has no Debian maintainer currently.
 
@@ -49,7 +49,7 @@ Also, you can access the APT repository directly: https://people.debian.org/~mha
 
 ## Docker image
 
-Debian-based Docker image is [available](https://hub.docker.com/r/mhatta/opencog-be) at dockerhub.
+Debian-based Docker container image is [available](https://hub.docker.com/r/mhatta/opencog-be) at dockerhub.
 
 ## Building OpenCog by yourself using these files
 
@@ -69,6 +69,9 @@ So the directory structure will look like the following:
 ├── atomspace
 │   ├── atomspace (repo)
 │   └── update-atomspace.sh
+├── cogserver
+│   ├── cogserver (repo)
+│   └── update-cogserver.sh
 ├── cogutils
 │   ├── cogutils (repo)
 │   └── update-cogutils.sh

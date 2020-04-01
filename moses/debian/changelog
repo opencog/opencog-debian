@@ -1,3 +1,9 @@
+opencog-moses (3.7.0~git20200331.e22740e-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 31 Mar 2020 18:13:02 +0900
+
 opencog-moses (3.6.10~git20190823.2600e5d-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.

@@ -42,7 +42,7 @@ override_dh_strip:
 
 override_dh_clean:
 	dh_clean
-	rm -rf $(CURDIR)/tests/cython/moses/*.pyc
+	rm -rf $(CURDIR)/tests/cython/moses/__pycache__/
 
 override_dh_auto_configure:
 	dh_auto_configure -- -DCONFDIR="/etc" -DMAKE_BUILD_TYPE=Release
