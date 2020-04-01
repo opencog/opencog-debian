@@ -1,0 +1,25 @@
+Source: opencog-pln
+Section: libdevel
+Priority: optional
+Maintainer: Masayuki Hatta <mhatta@debian.org>
+Build-Depends: debhelper (>= 11), cmake, cxxtest, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, libiberty-dev, binutils-dev, python-dev, python3-dev, valgrind, cython, opencog-atomspace, opencog-ure, python-nose, python3-nose, guile-2.2-dev, patchelf
+Standards-Version: 4.5.0
+Homepage: https://opencog.org/
+Vcs-Git: https://github.com/opencog/pln.git
+Vcs-Browser: https://github.com/opencog/pln.git
+
+Package: opencog-pln
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, opencog-ure
+Description: OpenCog Probabilistic Logic Network
+ Probabilistic Logic Network, or PLN for short, is a logic invented by
+ Ben Goertzel et al for common sense reasoning. It is particulaly well
+ suited for uncertain reasoning, especially when knowledge is based on limited
+ observations from reality, but can also handle abstract mathematical
+ reasoning, and the relationship between the two.
+ .
+ To handle uncertainty PLN represents truth as a second order distribution,
+ i.e. a probabilistic distribution over probabilistic distributions. Doing so
+ allows one to capture uncertainty while remaining in the well known and
+ proven framework of probability theory.
+ 

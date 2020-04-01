@@ -1,10 +1,9 @@
 #!/bin/sh
 
-REPO_NAME=cogutil
-DEB_NAME=opencog-cogutil
+REPO_NAME=learn
+DEB_NAME=opencog-learn
 
-# You can find this in cogutils/opencog/util/cogutil.h
-VERSION=2.0.3
+VERSION=0.0
 
 DATE=`date "+%Y%m%d"`
 GIT_HASH=`cd $REPO_NAME && git rev-parse --short=7 HEAD`
@@ -13,7 +12,7 @@ DEB_ARCHIVE_NAME=$DEB_NAME\_$VERSION~git$DATE.$GIT_HASH
 
 rm -rf ~/.cache/guile
 
-cd $REPO_NAME && git fetch upstream && git merge upstream/master && git push && cd ..
+cd $REPO_NAME && git fetch upstream && git merge upstream/master && cd ..
 cp -R $REPO_NAME $DEB_DIR_NAME
 
 cd $DEB_DIR_NAME && rm -rf .git .circleci && find . -type f -name .gitignore -exec rm {} \; && cd ..
@@ -22,7 +21,6 @@ tar -cJf $DEB_ARCHIVE_NAME.orig.tar.xz $DEB_DIR_NAME
 
 cp -R ../opencog-debian/$REPO_NAME/debian $DEB_DIR_NAME
 
-cd $DEB_DIR_NAME && dch -D mhatta-unstable --force-distribution -v $VERSION~git$DATE.$GIT_HASH-1 "New upstream snapshot" && cd ..
+cd $DEB_DIR_NAME && dch -v $VERSION~git$DATE.$GIT_HASH-1 && cd ..
 
 cp $DEB_DIR_NAME/debian/changelog ../opencog-debian/$REPO_NAME/debian
-

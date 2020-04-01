@@ -1,0 +1,32 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+
+# see FEATURE AREAS in dpkg-buildflags(1)
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# see ENVIRONMENT in dpkg-buildflags(1)
+# package maintainers to append CFLAGS
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+# package maintainers to append LDFLAGS
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+
+%:
+	dh $@ --buildsystem=cmake --builddirectory=build
+
+override_dh_install:
+	dh_install
+#	mv $(CURDIR)/debian/opencog-ure/usr/lib/python3.8 $(CURDIR)/debian/opencog-ure/usr/lib/python3
+#	mv $(CURDIR)/debian/opencog-ure/usr/lib/python3/site-packages $(CURDIR)/debian/opencog-ure/usr/lib/python3/dist-packages
+#	rm -f $(CURDIR)/debian/opencog-ure/usr/lib/python3/dist-packages/opencog/__init__.py
+
+override_dh_strip:
+	dh_strip
+#	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/python3/dist-packages/opencog" debian/opencog-ure/usr/lib/opencog/*.so
+#	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/python3/dist-packages/opencog" debian/opencog-ure/usr/lib/python3/dist-packages/opencog/*.so
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DCONFDIR="/etc"

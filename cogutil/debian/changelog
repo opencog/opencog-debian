@@ -1,3 +1,9 @@
+opencog-cogutil (2.0.3~git20200402.742dcc9-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Thu, 02 Apr 2020 03:19:42 +0900
+
 opencog-cogutil (2.0.3~git20200330.99ad9df-1) mhatta-unstable; urgency=medium
 
   * Initial release (well, not really...).

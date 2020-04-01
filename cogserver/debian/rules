@@ -24,6 +24,8 @@ override_dh_install:
 
 override_dh_strip:
 	dh_strip
+	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" debian/opencog-cogserver/usr/lib/opencog/*.so
+	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/pytho│n3/dist-packages/opencog" debian/opencog-cogserver/usr/lib/python3/dist-packages/opencog/*.so
 
 override_dh_clean:
 	dh_clean
