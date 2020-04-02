@@ -1,7 +1,7 @@
 #!/bin/sh
 
-REPO_NAME=miner
-DEB_NAME=opencog-miner
+REPO_NAME=attention
+DEB_NAME=opencog-attention
 
 VERSION=0.0
 
