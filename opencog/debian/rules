@@ -34,6 +34,7 @@ override_dh_clean:
 	rm -f $(CURDIR)/opencog/python/blending/src/*.pyc
 	rm -f $(CURDIR)/tests/python/blending_test/*.pyc
 	rm -f $(CURDIR)/tests/python/restapi/*.pyc
+	rm -rf $(CURDIR)/tests/cython/openpsi/__pycache__/
 
 override_dh_auto_configure:
 	dh_auto_configure -- -DCONFDIR="/etc"
@@ -41,8 +42,8 @@ override_dh_auto_configure:
 override_dh_auto_install:
 	dh_auto_install
 	rm -f $(CURDIR)/debian/opencog/usr/lib/python2.7/dist-packages/opencog/__init__.py
-	rm -f $(CURDIR)/debian/opencog/usr/lib/python3.7/dist-packages/opencog/__init__.py
-	mv $(CURDIR)/debian/opencog/usr/lib/python3.7 $(CURDIR)/debian/opencog/usr/lib/python3
+	rm -f $(CURDIR)/debian/opencog/usr/lib/python3.8/dist-packages/opencog/__init__.py
+	mv $(CURDIR)/debian/opencog/usr/lib/python3.8 $(CURDIR)/debian/opencog/usr/lib/python3
 	mv $(CURDIR)/debian/opencog/usr/lib/python3/site-packages $(CURDIR)/debian/opencog/usr/lib/python3/dist-packages
 	install -d $(CURDIR)/debian/opencog/usr/bin
 	install -m 755 $(CURDIR)/build/opencog/nlp/irc/cogita $(CURDIR)/debian/opencog/usr/bin

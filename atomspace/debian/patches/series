@@ -1,2 +1,3 @@
+replace_tilde_too.patch
 kill-vectorapiutest.patch
 kill-haskelltest.patch

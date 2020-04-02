@@ -2,6 +2,18 @@ opencog-atomspace (5.0.4~git20200402.675f57c-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.
 
+ -- Masayuki Hatta <mhatta@debian.org>  Thu, 02 Apr 2020 22:08:29 +0900
+
+opencog-atomspace (5.0.4~git20200402.675f57c-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Thu, 02 Apr 2020 22:06:34 +0900
+
+opencog-atomspace (5.0.4~git20200402.675f57c-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
  -- Masayuki Hatta <mhatta@debian.org>  Thu, 02 Apr 2020 03:27:37 +0900
 
 opencog-atomspace (5.0.3~git20170807.b7df63c-1) mhatta-unstable; urgency=medium

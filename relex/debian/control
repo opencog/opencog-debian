@@ -3,7 +3,7 @@ Section: devel
 Priority: optional
 Maintainer: Masayuki Hatta <mhatta@debian.org>
 Build-Depends: debhelper (>= 11), default-jdk, javahelper, libjwnl-java, libcommons-logging-java, libgetopt-java, wordnet-dev, wordnet-sense-index, liblink-grammar-java, ant
-Standards-Version: 4.4.0
+Standards-Version: 4.5.0
 Homepage: https://opencog.org
 Vcs-Git: https://github.com/opencog/relex.git
 Vcs-Browser: https://github.com/opencog/relex.git

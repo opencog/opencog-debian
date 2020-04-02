@@ -4,4 +4,3 @@ relation-extractor.sh-debian.patch
 opencog-server.sh-debian.patch
 link-grammar-server.sh-debian.patch
 batch-process.sh-debian.patch
-add_build_xml.patch

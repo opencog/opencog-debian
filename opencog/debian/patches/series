@@ -1,5 +1,5 @@
 fix_perl_path.patch
 run-chatbot.scm-debian.patch
 dicts_install_path_fix.patch
-kill_test.patch
-atom_types_h_fix.patch
+#kill_test.patch
+#atom_types_h_fix.patch

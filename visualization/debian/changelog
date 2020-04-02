@@ -1,11 +1,17 @@
-opencog-visualization (0.0~git20190823.d4a2521-1) mhatta-unstable; urgency=medium
+opencog-visualization (0.0~git20200402.0105864-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.
 
- -- Masayuki Hatta <mhatta@debian.org>  Fri, 23 Aug 2019 11:17:12 -0700
+ -- Masayuki Hatta <mhatta@debian.org>  Thu, 02 Apr 2020 13:05:16 +0900
+
+opencog-visualization (0.0~git20200402.-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Thu, 02 Apr 2020 13:03:56 +0900
 
 opencog-visualization (0.0~git20190822.d4a2521-1) mhatta-unstable; urgency=medium
 
-  * New upstream snapshot.
+  * Initial release.
 
  -- Masayuki Hatta <mhatta@debian.org>  Thu, 22 Aug 2019 13:17:50 -0700

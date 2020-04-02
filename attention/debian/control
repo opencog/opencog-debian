@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/opencog/attention.git
 
 Package: opencog-attention
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, opencog-ure
+Depends: ${shlibs:Depends}, ${misc:Depends}, opencog-ure, python3
 Description: OpenCog Attention Allocation
  Attention Allocation is an OpenCog subsystem meant to control the
  application of processing and memory resources to specific tasks. Currently
