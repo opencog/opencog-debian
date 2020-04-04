@@ -14,4 +14,4 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, python, python3
 Description: OpenCog Network Server
  The OpenCog Cogserver is a network scheme/python command-line and job server
  for the OpenCog framework.
- 
+

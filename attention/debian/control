@@ -15,4 +15,4 @@ Description: OpenCog Attention Allocation
  Attention Allocation is an OpenCog subsystem meant to control the
  application of processing and memory resources to specific tasks. Currently
  implemented: Economic Attention Allocation (ECAN).
- 
+

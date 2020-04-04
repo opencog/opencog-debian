@@ -1,10 +1,9 @@
 #!/bin/sh
 
-REPO_NAME=cogutil
-DEB_NAME=opencog-cogutil
+REPO_NAME=spacetime
+DEB_NAME=opencog-spacetime
 
-# You can find this in cogutils/opencog/util/cogutil.h
-VERSION=2.0.3
+VERSION=0.0
 
 DATE=`date "+%Y%m%d"`
 GIT_HASH=`cd $REPO_NAME && git rev-parse --short=7 HEAD`
@@ -25,4 +24,3 @@ cp -R ../opencog-debian/$REPO_NAME/debian $DEB_DIR_NAME
 cd $DEB_DIR_NAME && dch -D mhatta-unstable --force-distribution -v $VERSION~git$DATE.$GIT_HASH-1 "New upstream snapshot." && cd ..
 
 cp $DEB_DIR_NAME/debian/changelog ../opencog-debian/$REPO_NAME/debian
-

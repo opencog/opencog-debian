@@ -1,3 +1,9 @@
+opencog-cogserver (1.0.0~git20200404.0c27f63-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 04 Apr 2020 08:57:29 +0900
+
 opencog-cogserver (1.0.0~git20200402.0c27f63-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.
