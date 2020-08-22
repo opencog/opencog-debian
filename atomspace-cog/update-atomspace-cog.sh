@@ -1,9 +1,10 @@
 #!/bin/sh
 
-REPO_NAME=cogserver
-DEB_NAME=opencog-cogserver
+REPO_NAME=atomspace-cog
+DEB_NAME=opencog-atomspace-cog
 
-VERSION=1.0.0
+# You can find this in README.md
+VERSION=0.8.3
 
 DATE=`date "+%Y%m%d"`
 GIT_HASH=`cd $REPO_NAME && git rev-parse --short=7 HEAD`

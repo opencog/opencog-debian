@@ -1,0 +1,8 @@
+--- a/tests/attention/CMakeLists.txt
++++ b/tests/attention/CMakeLists.txt
+@@ -6,4 +6,4 @@
+ 
+ ADD_CXXTEST(AttentionParamQueryUTest)
+ ADD_CXXTEST(ImportanceDiffusionUTest)
+-ADD_CXXTEST(HebbianCreationModuleUTest)
++#ADD_CXXTEST(HebbianCreationModuleUTest)

@@ -1,7 +1,0 @@
---- a/tests/haskell/CMakeLists.txt
-+++ b/tests/haskell/CMakeLists.txt
-@@ -1,2 +1,2 @@
- ADD_SUBDIRECTORY(executionTestLib)
--ADD_SUBDIRECTORY(haskellTest)
-\ No newline at end of file
-+#ADD_SUBDIRECTORY(haskellTest)

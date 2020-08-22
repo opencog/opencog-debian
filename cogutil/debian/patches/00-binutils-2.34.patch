@@ -1,20 +1,11 @@
 --- a/opencog/util/backtrace-symbols.c
 +++ b/opencog/util/backtrace-symbols.c
-@@ -121,14 +121,14 @@
-       if (spot->found)
-             return;
+@@ -115,7 +115,7 @@
  
--      if ((bfd_get_section_flags(abfd, section) & SEC_ALLOC) == 0)
-+      if ((bfd_section_flags(section) & SEC_ALLOC) == 0)
-             return;
+     if (spot->found) return;
  
--      vma = bfd_get_section_vma(abfd, section);
-+      vma = bfd_section_vma(section);
-       if (spot->pc < vma)
-             return;
- 
--      size = bfd_section_size(abfd, section);
-+      size = bfd_section_size(section);
-       if (spot->pc >= vma + size)
-             return;
- 
+-#ifdef bfd_section_flags
++#ifndef bfd_get_section_flags
+     #define NEW_BFD_API 1
+ #endif
+ #ifdef NEW_BFD_API

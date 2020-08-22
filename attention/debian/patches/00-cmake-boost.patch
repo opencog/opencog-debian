@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -138,6 +138,8 @@
+ 	SET(Boost_FOUND 1)
+ ENDIF(Boost_FOUND_SAVE)
+ 
++FIND_PACKAGE(Boost REQUIRED COMPONENTS system filesystem)
++
+ # ----------------------------------------------------------
+ # Needed for unit tests
+ 
