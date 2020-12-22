@@ -1,3 +1,15 @@
+opencog-pln (0.0~git20201222.9a03e86-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 22 Dec 2020 13:53:17 +0900
+
+opencog-pln (0.0~git20200823.f07d9a9-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sun, 23 Aug 2020 06:32:16 +0900
+
 opencog-pln (0.0~git20200404.f07d9a9-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.

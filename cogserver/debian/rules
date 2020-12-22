@@ -19,7 +19,7 @@
 
 override_dh_install:
 	dh_install
-	mv $(CURDIR)/debian/opencog-cogserver/usr/lib/python3.8 $(CURDIR)/debian/opencog-cogserver/usr/lib/python3
+	mv $(CURDIR)/debian/opencog-cogserver/usr/lib/python3.9 $(CURDIR)/debian/opencog-cogserver/usr/lib/python3
 	mv $(CURDIR)/debian/opencog-cogserver/usr/lib/python3/site-packages $(CURDIR)/debian/opencog-cogserver/usr/lib/python3/dist-packages
 
 override_dh_strip:

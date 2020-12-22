@@ -1,3 +1,9 @@
+opencog-spacetime (0.0~git20200823.9d05169-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sun, 23 Aug 2020 06:50:06 +0900
+
 opencog-spacetime (0.0~git20200404.9d05169-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.

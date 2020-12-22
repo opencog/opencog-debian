@@ -2,7 +2,7 @@ Source: opencog-visualization
 Section: devel
 Priority: optional
 Maintainer: Masayuki Hatta <mhatta@debian.org>
-Build-Depends: debhelper (>= 11), libcogutil-dev, opencog-atomspace, opencog-moses, opencog-ure, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-signals-dev, libboost-system-dev, libboost-thread-dev, cmake, libtbb-dev, libzmq3-dev, liblink-grammar-dev (>= 5.6.2), valgrind, haskell-stack, cython, python-dev, protobuf-compiler, ghc, libcpprest-dev, guile-2.2-dev, liboctomap-dev, uuid-dev, libjsoncpp-dev, libsdl1.2-dev, libsdl-gfx1.2-dev, libgtk-3-dev, patchelf
+Build-Depends: debhelper (>= 11), libcogutil-dev, opencog-atomspace, opencog-moses, opencog-ure, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, cmake, libtbb-dev, libzmq3-dev, liblink-grammar-dev (>= 5.6.2), valgrind, haskell-stack, cython, python3-dev, protobuf-compiler, ghc, libcpprest-dev, guile-2.2-dev, liboctomap-dev, uuid-dev, libjsoncpp-dev, libsdl1.2-dev, libsdl-gfx1.2-dev, libgtk-3-dev, patchelf
 Standards-Version: 4.5.0
 Homepage:https://opencog.org
 Vcs-Git: https://github.com/opencog/visualization.git
@@ -13,4 +13,4 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, opencog
 Description: OpenCog Graphics and Visualization Tools
  This is a set of experimental OpenCog visualization tools.
- 
+

@@ -1,3 +1,9 @@
+opencog-visualization (0.0~git20201222.2e81194-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 22 Dec 2020 14:45:17 +0900
+
 opencog-visualization (0.0~git20200402.0105864-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.

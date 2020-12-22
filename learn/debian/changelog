@@ -1,3 +1,9 @@
+opencog-learn (0.0~git20200823.d13e9b5-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sun, 23 Aug 2020 06:24:18 +0900
+
 opencog-learn (0.0~git20200402.8dffa5b-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.
