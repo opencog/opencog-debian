@@ -24,19 +24,22 @@ override_dh_clean:
 	rm -f $(CURDIR)/tests/haskell/executionTestLib/a.out
 	rm -rf $(CURDIR)/tests/haskell/haskellTest/.stack-work
 	rm -f $(CURDIR)/tests/haskell/haskellTest/libopencoglib-0.1.0.0.so
-	rm -rf $(CURDIR)/tests/cython/bindlink/__pycache__
-	rm -rf $(CURDIR)/tests/cython/atomspace/__pycache__
-	rm -rf $(CURDIR)/tests/cython/guile/__pycache__
-	rm -rf $(CURDIR)/tests/cython/utilities/__pycache__
-	rm -rf $(CURDIR)/tests/cython/__pycache__
+#	rm -rf $(CURDIR)/tests/cython/bindlink/__pycache__
+#	rm -rf $(CURDIR)/tests/cython/atomspace/__pycache__
+#	rm -rf $(CURDIR)/tests/cython/guile/__pycache__
+#	rm -rf $(CURDIR)/tests/cython/utilities/__pycache__
+#	rm -rf $(CURDIR)/tests/cython/__pycache__
+	rm -rf $(CURDIR)/opencog/haskell/stack.yaml.lock
+	rm -rf $(CURDIR)/tests/haskell/executionTestLib/stack.yaml.lock
+	rm -rf $(CURDIR)/tests/haskell/haskellTest/stack.yaml.lock
 
 override_dh_auto_configure:
 	dh_auto_configure -- -DCONFDIR="/etc"
 
 override_dh_install:
 	dh_install
-	mv $(CURDIR)/debian/opencog-atomspace/usr/lib/python3.9 $(CURDIR)/debian/opencog-atomspace/usr/lib/python3
-	mv $(CURDIR)/debian/opencog-atomspace/usr/lib/python3/site-packages $(CURDIR)/debian/opencog-atomspace/usr/lib/python3/dist-packages
+#	mv $(CURDIR)/debian/opencog-atomspace/usr/lib/python3.9 $(CURDIR)/debian/opencog-atomspace/usr/lib/python3
+#	mv $(CURDIR)/debian/opencog-atomspace/usr/lib/python3/site-packages $(CURDIR)/debian/opencog-atomspace/usr/lib/python3/dist-packages
 
 override_dh_strip:
 	dh_strip

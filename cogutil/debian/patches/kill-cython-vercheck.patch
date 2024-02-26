@@ -1,0 +1,11 @@
+--- a/cmake/OpenCogFindPython.cmake
++++ b/cmake/OpenCogFindPython.cmake
+@@ -37,7 +37,7 @@
+ # Cython is used to generate python bindings.
+ IF(HAVE_PY_INTERP)
+ 	# Version 0.24 or later needed for @property markup for python2
+-	FIND_PACKAGE(Cython 0.24.0)
++	FIND_PACKAGE(Cython)
+ 
+ 	IF (CYTHON_FOUND AND HAVE_PY_LIBS)
+ 		ADD_DEFINITIONS(-DHAVE_CYTHON)

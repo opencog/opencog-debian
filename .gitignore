@@ -1,4 +1,11 @@
 *~
+*.buildinfo
+*.changes
+*.dsc
 *.deb
 *.xz
+*.upload
 cogutil/cogutil
+cogutil/opencog-cogutil-*
+atomspace/atomspace
+atomspace/opencog-atomspace-*

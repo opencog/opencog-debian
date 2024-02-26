@@ -3,7 +3,7 @@ Section: libdevel
 Priority: optional
 Maintainer: Masayuki Hatta <mhatta@debian.org>
 Build-Depends: debhelper (>= 11), cmake, cxxtest, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, libiberty-dev, doxygen, graphviz, binutils-dev, python3-dev, patchelf
-Standards-Version: 4.5.0
+Standards-Version: 4.6.2
 Homepage: https://opencog.org/
 Vcs-Git: https://github.com/opencog/cogutil.git
 Vcs-Browser: https://github.com/opencog/cogutil.git

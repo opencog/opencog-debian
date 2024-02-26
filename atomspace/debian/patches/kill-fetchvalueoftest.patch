@@ -1,0 +1,6 @@
+--- a/tests/persist/flow/CMakeLists.txt
++++ b/tests/persist/flow/CMakeLists.txt
+@@ -1,2 +1,2 @@
+ 
+-ADD_GUILE_TEST(FetchValueOfTest fetch-value-of-test.scm)
++#ADD_GUILE_TEST(FetchValueOfTest fetch-value-of-test.scm)

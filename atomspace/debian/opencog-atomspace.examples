@@ -1,8 +1,11 @@
 examples/atomspace
+examples/c++
 examples/c++-guile
-examples/gearman
+examples/foreign
 examples/haskell
+examples/ocaml
 examples/pattern-matcher
 examples/python
+examples/type-system
 examples/README.md
 debian/dot.guile

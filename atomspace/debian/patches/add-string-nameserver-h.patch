@@ -1,0 +1,10 @@
+--- a/opencog/atoms/atom_types/NameServer.h
++++ b/opencog/atoms/atom_types/NameServer.h
+@@ -32,6 +32,7 @@
+ #include <opencog/util/sigslot.h>
+ #include <opencog/atoms/atom_types/types.h>
+ #include <opencog/atoms/atom_types/atom_types.h>
++#include <string>
+ 
+ class ClassServerUTest;
+ 

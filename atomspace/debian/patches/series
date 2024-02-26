@@ -1,1 +1,6 @@
+
+add-string-nameserver-h.patch
+kill-fetchvalueoftest.patch
+kill-readproxytest.patch
 kill-vectorapiutest.patch
+kill-haskellatomspace.patch

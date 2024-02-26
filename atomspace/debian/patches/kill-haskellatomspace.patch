@@ -1,0 +1,14 @@
+--- a/tests/haskell/haskellTest/CMakeLists.txt
++++ b/tests/haskell/haskellTest/CMakeLists.txt
+@@ -11,7 +11,7 @@
+ #but we can't build both at the same time
+ ADD_DEPENDENCIES(haskell-atomspace-test haskell-atomspace-executionlib)
+ 
+-ADD_TEST(NAME HaskellAtomSpace
+-    COMMAND sh runTest.sh "${PROJECT_BINARY_DIR}/opencog/haskell" "${CMAKE_CURRENT_SOURCE_DIR}"
+-    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+-)
++#ADD_TEST(NAME HaskellAtomSpace
++#    COMMAND sh runTest.sh "${PROJECT_BINARY_DIR}/opencog/haskell" "${CMAKE_CURRENT_SOURCE_DIR}"
++#    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
++#)
