@@ -1,3 +1,21 @@
+opencog-atomspace-cog (0.8.3~git20240330.678cc0e-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 30 Mar 2024 11:25:39 +0900
+
+opencog-atomspace-cog (0.8.3~git20240326.678cc0e-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 26 Mar 2024 19:25:20 +0900
+
+opencog-atomspace-cog (0.8.3~git20240326.-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 26 Mar 2024 19:02:47 +0900
+
 opencog-atomspace-cog (0.8.3~git20200823.4498b09-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.

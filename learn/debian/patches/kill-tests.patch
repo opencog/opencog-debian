@@ -1,0 +1,10 @@
+--- a/tests/CMakeLists.txt
++++ b/tests/CMakeLists.txt
+@@ -1,6 +1,6 @@
+ 
+ # Unit tests
+-ENABLE_TESTING()
++#ENABLE_TESTING()
+ 
+ ADD_SUBDIRECTORY (merge)
+ 

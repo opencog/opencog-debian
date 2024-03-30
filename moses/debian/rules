@@ -1,5 +1,5 @@
 #!/usr/bin/make -f
-# See debhelper(7) (uncomment to enable)
+# 0;10;1cSee debhelper(7) (uncomment to enable)
 # output every command that modifies files on the build system.
 #export DH_VERBOSE = 1
 
@@ -17,32 +17,15 @@
 %:
 	dh $@ --buildsystem-cmake --builddirectory=build
 
-override_dh_install:
-	dh_install
-
 override_dh_strip:
 	dh_strip
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/bin/combo-fmt-converter
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/bin/eval-candidate
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/bin/eval-candidate-likelihood
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/bin/eval-diversity
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/bin/eval-features
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/bin/eval-table
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/bin/feature-selection
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/bin/gen-disj-conj
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/bin/gen-table
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/bin/moses
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/lib/libcomboant.so
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/lib/libcomboreduct.so
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/lib/libfeature_selection.so
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/lib/libmoses.so
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/lib/libmoses_exec.so
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-moses/usr/lib/python3/dist-packages/opencog/pymoses.so
+	patchelf --remove-rpath $(CURDIR)/debian/opencog-moses/usr/bin/*
+	patchelf --remove-rpath $(CURDIR)/debian/opencog-moses/usr/lib/*.so
+	patchelf --remove-rpath $(CURDIR)/debian/opencog-moses/usr/lib/python3/dist-packages/opencog/*.so
 	rm -f $(CURDIR)/debian/opencog-moses/usr/lib/python3/dist-packages/opencog/__init__.py
 
 override_dh_clean:
 	dh_clean
-	rm -rf $(CURDIR)/tests/cython/moses/__pycache__/
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DCONFDIR="/etc" -DMAKE_BUILD_TYPE=Release
+	dh_auto_configure -- -DCONFDIR="/etc" -DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH) -DMAKE_BUILD_TYPE=Release

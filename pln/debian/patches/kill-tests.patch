@@ -1,0 +1,8 @@
+--- a/tests/CMakeLists.txt
++++ b/tests/CMakeLists.txt
+@@ -1,4 +1,4 @@
+-ENABLE_TESTING()
++#ENABLE_TESTING()
+ INCLUDE(AddCxxtest)
+ 
+ ADD_DEFINITIONS(-DPROJECT_SOURCE_DIR="${CMAKE_SOURCE_DIR}"

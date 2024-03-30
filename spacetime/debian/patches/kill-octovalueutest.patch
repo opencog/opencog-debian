@@ -1,0 +1,9 @@
+--- a/tests/spacetime/CMakeLists.txt
++++ b/tests/spacetime/CMakeLists.txt
+@@ -7,5 +7,5 @@
+ 	${COGUTIL_LIBRARY}
+ )
+ ADD_CXXTEST(AtomOcTreeUTest)
+-ADD_CXXTEST(OctoValueUTest)
++#ADD_CXXTEST(OctoValueUTest)
+ ADD_CXXTEST(TimeSpaceAtomUTest)

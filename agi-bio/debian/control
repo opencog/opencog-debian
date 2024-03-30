@@ -1,0 +1,17 @@
+Source: opencog-agi-bio
+Section: libdevel
+Priority: optional
+Maintainer: Masayuki Hatta <mhatta@debian.org>
+Build-Depends: debhelper (>= 11), cmake, cxxtest, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, libiberty-dev, binutils-dev, python3-dev, valgrind, cython3, opencog-atomspace, opencog-ure, python3-nose, guile-3.0-dev, patchelf
+Standards-Version: 4.6.2
+Homepage: https://opencog.org/
+Vcs-Git: https://github.com/opencog/agi-bio.git
+Vcs-Browser: https://github.com/opencog/agi-bio.git
+
+Package: opencog-agi-bio
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, opencog-ure, python3
+Description: OpenCog AGI-Bio package
+ Genomic and proteomic research using the OpenCog toolset.
+ This includes experiments in applying MOSES, PLN, pattern mining
+ and other OpenCog components.

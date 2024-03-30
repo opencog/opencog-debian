@@ -17,39 +17,35 @@
 %:
 	dh $@ --buildsystem-cmake --builddirectory=build
 
-override_dh_clean:  
-	dh_clean    
-	rm -f $(CURDIR)/tests/pln_old/*.pyc
-	rm -f $(CURDIR)/tests/cython/spatial/*.pyc
-	rm -f $(CURDIR)/tests/cython/agents/*.pyc
-	rm -f $(CURDIR)/tests/cython/server/*.pyc
-	rm -f $(CURDIR)/opencog/python/web/*.pyc
-	rm -f $(CURDIR)/opencog/python/web/api/*.pyc
-	rm -f $(CURDIR)/tests/cython/spacetime/*.pyc
-	rm -f $(CURDIR)/opencog/nlp/anaphora/*.pyc
-	rm -f $(CURDIR)/opencog/nlp/anaphora/agents/*.pyc
-	rm -f $(CURDIR)/opencog/python/blending/*.pyc
-	rm -f $(CURDIR)/opencog/python/blending/util/*.pyc
-	rm -f $(CURDIR)/opencog/python/blending/src/chooser/*.pyc
-	rm -f $(CURDIR)/opencog/python/blending/src/*.pyc
-	rm -f $(CURDIR)/tests/python/blending_test/*.pyc
-	rm -f $(CURDIR)/tests/python/restapi/*.pyc
-	rm -rf $(CURDIR)/tests/cython/openpsi/__pycache__/
+override_dh_clean:
+	dh_clean
+	#rm -f $(CURDIR)/tests/pln_old/*.pyc
+	#rm -f $(CURDIR)/tests/cython/spatial/*.pyc
+	#rm -f $(CURDIR)/tests/cython/agents/*.pyc
+	#rm -f $(CURDIR)/tests/cython/server/*.pyc
+	#rm -f $(CURDIR)/opencog/python/web/*.pyc
+	#rm -f $(CURDIR)/opencog/python/web/api/*.pyc
+	#rm -f $(CURDIR)/tests/cython/spacetime/*.pyc
+	#rm -f $(CURDIR)/opencog/nlp/anaphora/*.pyc
+	#rm -f $(CURDIR)/opencog/nlp/anaphora/agents/*.pyc
+	#rm -f $(CURDIR)/opencog/python/blending/*.pyc
+	#rm -f $(CURDIR)/opencog/python/blending/util/*.pyc
+	#rm -f $(CURDIR)/opencog/python/blending/src/chooser/*.pyc
+	#rm -f $(CURDIR)/opencog/python/blending/src/*.pyc
+	#rm -f $(CURDIR)/tests/python/blending_test/*.pyc
+	#rm -f $(CURDIR)/tests/python/restapi/*.pyc
+	#rm -rf $(CURDIR)/tests/cython/openpsi/__pycache__/
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DCONFDIR="/etc"
+	dh_auto_configure -- -DCONFDIR="/etc" -DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
 
 override_dh_auto_install:
 	dh_auto_install
-	rm -f $(CURDIR)/debian/opencog/usr/lib/python2.7/dist-packages/opencog/__init__.py
-	rm -f $(CURDIR)/debian/opencog/usr/lib/python3.9/dist-packages/opencog/__init__.py
-	mv $(CURDIR)/debian/opencog/usr/lib/python3.9 $(CURDIR)/debian/opencog/usr/lib/python3
-	mv $(CURDIR)/debian/opencog/usr/lib/python3/site-packages $(CURDIR)/debian/opencog/usr/lib/python3/dist-packages
 	install -d $(CURDIR)/debian/opencog/usr/bin
 	install -m 755 $(CURDIR)/build/opencog/nlp/irc/cogita $(CURDIR)/debian/opencog/usr/bin
 	install -m 755 $(CURDIR)/opencog/nlp/aiml/import/aiml2psi.pl $(CURDIR)/debian/opencog/usr/bin/aiml2psi
 
 override_dh_strip:
 	dh_strip
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" debian/opencog/usr/lib/opencog/*.so
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" debian/opencog/usr/lib/python3/dist-packages/opencog/*.so
+#	patchelf --remove-rpath $(CURDIR)/debian/opencog/usr/lib/opencog/*.so
+#	patchelf --remove-rpath $(CURDIR/)debian/opencog/usr/lib/python3/dist-packages/opencog/*.so

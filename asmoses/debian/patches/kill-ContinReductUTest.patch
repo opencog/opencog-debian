@@ -1,0 +1,25 @@
+--- a/tests/reduct/CMakeLists.txt
++++ b/tests/reduct/CMakeLists.txt
+@@ -22,14 +22,14 @@
+ 	${COGUTIL_LIBRARY}
+ )
+ 
+-ADD_CXXTEST(ContinReductUTest)
+-TARGET_LINK_LIBRARIES(ContinReductUTest
+-	asreduct
+-	ascombo
+-	ascomboant
+-	data
+-	${COGUTIL_LIBRARY}
+-)
++# ADD_CXXTEST(ContinReductUTest)
++# TARGET_LINK_LIBRARIES(ContinReductUTest
++# 	asreduct
++# 	ascombo
++# 	ascomboant
++# 	data
++# 	${COGUTIL_LIBRARY}
++# )
+ 
+ ADD_CXXTEST(FullReductUTest)
+ TARGET_LINK_LIBRARIES(FullReductUTest

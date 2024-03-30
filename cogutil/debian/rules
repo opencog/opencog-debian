@@ -19,7 +19,8 @@
 
 override_dh_strip:
 	dh_strip
-	patchelf --set-rpath "/usr/lib/opencog" debian/libcogutil-dev/usr/lib/opencog/libcogutil.so
+#	patchelf --set-rpath "/usr/lib/opencog" debian/libcogutil-dev/usr/lib/opencog/libcogutil.so
+	patchelf --remove-rpath $(CURDIR)/debian/libcogutil-dev/usr/lib/opencog/libcogutil.so
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DCONFDIR="/etc"
+	dh_auto_configure -- -DCONFDIR="/etc" -DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)

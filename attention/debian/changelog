@@ -1,3 +1,15 @@
+opencog-attention (0.0~git20240330.def432d-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 30 Mar 2024 11:21:05 +0900
+
+opencog-attention (0.0~git20240326.def432d-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 26 Mar 2024 20:33:59 +0900
+
 opencog-attention (0.0~git20200823.d30097c-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.

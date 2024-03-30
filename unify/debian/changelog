@@ -1,0 +1,23 @@
+opencog-unify (1.0.0~git20240329.e72bb48-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Fri, 29 Mar 2024 21:51:04 +0900
+
+opencog-unify (1.0.0~git20240306.e72bb48-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Wed, 06 Mar 2024 17:51:18 +0900
+
+opencog-unify (0.0~git20240306.e72bb48-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Wed, 06 Mar 2024 17:44:48 +0900
+
+opencog-unify (0.0~git0-1) mhatta-unstable; urgency=medium
+
+  * Initial release.
+  
+ -- Masayuki Hatta <mhatta@debian.org>  Wed, 01 Apr 2020 17:34:59 +0900

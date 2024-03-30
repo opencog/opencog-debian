@@ -1,0 +1,11 @@
+--- a/opencog/nlp/sentiment/CMakeLists.txt
++++ b/opencog/nlp/sentiment/CMakeLists.txt
+@@ -5,7 +5,7 @@
+ 
+ INSTALL (FILES
+ 	basic_sentiment_analysis.py
+-	DESTINATION "lib${LIB_DIR_SUFFIX}/python2.7/dist-packages/sentiment")
++	DESTINATION "lib${LIB_DIR_SUFFIX}/python3/dist-packages/opencog")
+ 
+ INSTALL (FILES
+ 	dicts/positive.yml

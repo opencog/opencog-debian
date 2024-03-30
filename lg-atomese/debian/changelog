@@ -1,0 +1,17 @@
+opencog-lg-atomese (0.0~git20240330.ed053df-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 30 Mar 2024 10:21:57 +0900
+
+opencog-lg-atomese (0.0~git20240327.ed053df-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Wed, 27 Mar 2024 14:34:52 +0900
+
+opencog-lg-atomese (0.0~git20200402.8dffa5b-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Thu, 02 Apr 2020 03:00:00 +0900

@@ -1,17 +1,17 @@
-Source: opencog-atomspace-cog
+Source: opencog-atomspace-rocks
 Section: libdevel
 Priority: optional
 Maintainer: Masayuki Hatta <mhatta@debian.org>
-Build-Depends: debhelper (>= 11), cmake, cxxtest, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, libiberty-dev, binutils-dev, valgrind, opencog-atomspace, opencog-cogserver, guile-2.2-dev, patchelf
-Standards-Version: 4.5.0
+Build-Depends: debhelper (>= 11), cmake, cxxtest, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, libiberty-dev, binutils-dev, valgrind, opencog-atomspace, opencog-cogserver, guile-3.0-dev, patchelf, librocksdb-dev
+Standards-Version: 4.6.2
 Homepage: https://opencog.org/
-Vcs-Git: https://github.com/opencog/atomspace-cog.git
-Vcs-Browser: https://github.com/opencog/atomspace-cog.git
+Vcs-Git: https://github.com/opencog/atomspace-rocks.git
+Vcs-Browser: https://github.com/opencog/atomspace-rocks.git
 
-Package: opencog-atomspace-cog
+Package: opencog-atomspace-rocks
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, opencog-atomspace, opencog-cogserver
-Description: OpenCog Atomspace CogStrage Client
- This allows an AtomSpace to communicate with other AtomSpaces by having them
- all connect to a common CogServer. The CogServer itself also provides an AtomS pace, which all clients interact with, in common.
-
+Description: OpenCog AtomSpace RocksDB Backend
+ Save and restore AtomSpace contents to a RocksDB database.
+ The RocksDB database is a single-user, local-host-only file-backed database.
+ That means that only one AtomSpace can connect to it at any given moment.

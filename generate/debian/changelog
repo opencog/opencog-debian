@@ -1,0 +1,11 @@
+opencog-generate (0.0~git20240327.c8d7c8b-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Wed, 27 Mar 2024 21:12:06 +0900
+
+opencog-generate (0.0~git20200402.8dffa5b-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Thu, 02 Apr 2020 03:00:00 +0900

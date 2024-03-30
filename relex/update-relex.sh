@@ -19,8 +19,8 @@ cd $DEB_DIR_NAME && rm -rf .git && find . -type f -name .gitignore -exec rm {} \
 
 tar -cJf $DEB_ARCHIVE_NAME.orig.tar.xz $DEB_DIR_NAME
 
-cp -R ../opencog-debian/$REPO_NAME/debian $DEB_DIR_NAME
+cp -R debian $DEB_DIR_NAME
 
 cd $DEB_DIR_NAME && dch -D mhatta-unstable --force-distribution -v $VERSION~git$DATE.$GIT_HASH-1 "New upstream snapshot." && cd ..
 
-cp $DEB_DIR_NAME/debian/changelog ../opencog-debian/$REPO_NAME/debian
+cp $DEB_DIR_NAME/debian/changelog debian

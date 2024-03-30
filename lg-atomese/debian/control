@@ -1,0 +1,16 @@
+Source: opencog-lg-atomese
+Section: libdevel
+Priority: optional
+Maintainer: Masayuki Hatta <mhatta@debian.org>
+Build-Depends: debhelper (>= 11), cmake, cxxtest, opencog-atomspace, link-grammar, guile-3.0-dev, patchelf
+Standards-Version: 4.6.2
+Homepage: https://opencog.org/
+Vcs-Git: https://github.com/opencog/lg-atomese.git
+Vcs-Browser: https://github.com/opencog/lg-atomese.git
+
+Package: opencog-lg-atomese
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, opencog-atomspace, python3, link-grammar
+Description: OpenCog Atomese API for Link Grammar
+ This package provides an Atomese API for Link Grammar, allowing Link Grammar
+ dictionaries and parse results to be accessed from the AtomSpace.

@@ -1,0 +1,11 @@
+opencog-vision (0.0~git20240330.6548a1b-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 30 Mar 2024 10:41:04 +0900
+
+opencog-vision (0.0~git20190820.a62b1b1-1) mhatta-unstable; urgency=medium
+
+  * Initial release.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Tue, 20 Aug 2019 19:56:03 -0700

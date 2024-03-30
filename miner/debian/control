@@ -2,11 +2,11 @@ Source: opencog-miner
 Section: libdevel
 Priority: optional
 Maintainer: Masayuki Hatta <mhatta@debian.org>
-Build-Depends: debhelper (>= 11), cmake, cxxtest, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, libiberty-dev, binutils-dev, python3-dev, valgrind, cython, opencog-atomspace, opencog-ure, python3-nose, guile-2.2-dev, patchelf
-Standards-Version: 4.5.0
+Build-Depends: debhelper (>= 11), cmake, cxxtest, libboost-dev, libboost-date-time-dev, libboost-filesystem-dev, libboost-program-options-dev, libboost-regex-dev, libboost-serialization-dev, libboost-system-dev, libboost-thread-dev, libiberty-dev, binutils-dev, python3-dev, valgrind, cython3, opencog-atomspace, opencog-ure, python3-nose, guile-3.0-dev, patchelf
+Standards-Version: 4.6.2
 Homepage: https://opencog.org/
-Vcs-Git: https://github.com/opencog/cogutils.git
-Vcs-Browser: https://github.com/opencog/cogutils.git
+Vcs-Git: https://github.com/opencog/miner.git
+Vcs-Browser: https://github.com/opencog/miner.git
 
 Package: opencog-miner
 Architecture: any

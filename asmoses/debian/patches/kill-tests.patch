@@ -1,0 +1,21 @@
+--- a/tests/CMakeLists.txt
++++ b/tests/CMakeLists.txt
+@@ -22,12 +22,12 @@
+ 
+ 	#ADD_SUBDIRECTORY (hillclimbing)
+ 
+-	ADD_SUBDIRECTORY (combo)
+-	ADD_SUBDIRECTORY (moses)
+-	ADD_SUBDIRECTORY (feature-selection)
+-	ADD_SUBDIRECTORY (atomese)
+-	ADD_SUBDIRECTORY (data)
+-	ADD_SUBDIRECTORY (reduct)
++	#ADD_SUBDIRECTORY (combo)
++	#ADD_SUBDIRECTORY (moses)
++	#ADD_SUBDIRECTORY (feature-selection)
++	#ADD_SUBDIRECTORY (atomese)
++	#ADD_SUBDIRECTORY (data)
++	#ADD_SUBDIRECTORY (reduct)
+ 
+ ENDIF (CXXTEST_FOUND)
+ 

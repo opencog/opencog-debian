@@ -1,3 +1,15 @@
+opencog (0.0~git20240330.77db0f0-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Sat, 30 Mar 2024 12:26:39 +0900
+
+opencog (0.0~git20240327.77db0f0-1) mhatta-unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Masayuki Hatta <mhatta@debian.org>  Wed, 27 Mar 2024 13:32:00 +0900
+
 opencog (0.0~git20201222.300f9be-1) mhatta-unstable; urgency=medium
 
   * New upstream snapshot.

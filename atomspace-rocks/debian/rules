@@ -17,12 +17,10 @@
 %:
 	dh $@ --buildsystem=cmake --builddirectory=build
 
-override_dh_install:
-	dh_install
-
 override_dh_strip:
 	dh_strip
-	patchelf --set-rpath "/usr/lib/opencog:/usr/lib/opencog/modules:/usr/lib/python3/dist-packages/opencog" $(CURDIR)/debian/opencog-atomspace-cog/usr/lib/opencog/*.so 
+	patchelf --remove-rpath $(CURDIR)/debian/opencog-atomspace-rocks/usr/lib/opencog/*.so 
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DCONFDIR="/etc"
+	dh_auto_configure -- -DCONFDIR="/etc" -DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
+
